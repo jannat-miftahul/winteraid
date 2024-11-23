@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "title": "Winter Warmth Drive",
+        "image": "https://example.com/images/winter-warmth-drive.jpg",
+        "description": "Providing warm clothing to those in need during the winter season.",
+        "status": "Active",
+        "contactInfo": "contact@winterwarmth.com",
+        "division": "Dhaka"
+    },
+    {
+        "id": 2,
+        "title": "Cozy Coats Campaign",
+        "image": "https://example.com/images/cozy-coats-campaign.jpg",
+        "description": "Collecting coats for the homeless to keep them warm.",
+        "status": "Completed",
+        "contactInfo": "info@cozycoats.com",
+        "division": "Chittagong"
+    },
+    {
+        "id": 3,
+        "title": "Blanket Blessings",
+        "image": "https://example.com/images/blanket-blessings.jpg",
+        "description": "Distributing blankets to families in need.",
+        "status": "Active",
+        "contactInfo": "support@blanketblessings.com",
+        "division": "Khulna"
+    },
+    {
+        "id": 4,
+        "title": "Warm Hands Initiative",
+        "image": "https://example.com/images/warm-hands-initiative.jpg",
+        "description": "Providing gloves and mittens to children and adults.",
+        "status": "Upcoming",
+        "contactInfo": "hello@warmhands.com",
+        "division": "Rajshahi"
+    },
+    {
+        "id": 5,
+        "title": "Hearts for Hats",
+        "image": "https://example.com/images/hearts-for-hats.jpg",
+        "description": "Collecting hats for the homeless to keep them warm.",
+        "status": "Active",
+        "contactInfo": "contact@heartsforhats.com",
+        "division": "Barisal"
+    },
+    {
+        "id": 6,
+        "title": "Socks of Love",
+        "image": "https://example.com/images/socks-of-love.jpg",
+        "description": "Distributing warm socks to those in need.",
+        "status": "Completed",
+        "contactInfo": "info@socksoflove.com",
+        "division": "Sylhet"
+    },
+    {
+        "id": 7,
+        "title": "Winter Shelter Support",
+        "image": "https://example.com/images/winter-shelter-support.jpg",
+        "description": "Supporting shelters with winter clothing donations.",
+        "status": "Active",
+        "contactInfo": "support@wintershelter.com",
+        "division": "Rangpur"
+    },
+    {
+        "id": 8,
+        "title": "Warmth for All",
+        "image": "https://example.com/images/warmth-for-all.jpg",
+        "description": "Ensuring everyone has access to warm clothing.",
+        "status": "Upcoming",
+        "contactInfo": "hello@warmthforall.com",
+        "division": "Mymensingh"
+    },
+    {
+        "id": 9,
+        "title": "Cozy Kids Campaign",
+        "image": "https://example.com/images/cozy-kids-campaign.jpg",
+        "description": "Providing warm clothing for children in need.",
+        "status": "Active",
+        "contactInfo": "contact@cozykids.com",
+        "division": "Dhaka"
+    },
+    {
+        "id": 10,
+        "title": "Winter Warriors",
+        "image": "https://example.com/images/winter-warriors.jpg",
+        "description": "Helping the homeless stay warm during the winter.",
+        "status": "Completed",
+        "contactInfo": "info@winterwarriors.com",
+        "division": "Chittagong"
+    },
+    {
+        "id": 11,
+        "title": "Warm Wishes",
+        "image": "https://example.com/images/warm-wishes.jpg",
+        "description": "Collecting and distributing warm clothing and blankets.",
+        "status": "Active",
+        "contactInfo": "support@warmwishes.com",
+        "division": "Khulna"
+    },
+    {
+        "id": 12,
+        "title": "Winter Aid",
+        "image": "https://example.com/images/winter-aid.jpg",
+        "description": "Providing essential winter clothing to those in need.",
+        "status": "Upcoming",
+        "contactInfo": "hello@winteraid.com",
+        "division": "Rajshahi"
+    }
+]

@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-darkBlue text-white py-8">
+        <footer className="bg-[#181C14] text-white py-8 mt-20">
             <div className="w-11/12 mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-center">
+                <div className="flex flex-col md:flex-row justify-between md:items-center gap-8">
                     {/* Company Information */}
-                    <div className="w-1/3 space-y-2">
+                    <div className="md:w-1/3 space-y-2">
                         <Link
                             to="/"
                             className="text-2xl font-bold gap-0 hover:bg-transparent"
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Information */}
-                    <div className="w-1/3 space-y-2">
+                    <div className="md:w-1/3 space-y-2">
                         <h2 className="text-lg font-bold">Contact Us</h2>
                         <p>Email: info@winteraid.com</p>
                         <p>Phone: (123) 456-7890</p>

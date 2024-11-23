@@ -1,9 +1,9 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="w-11/12 mx-auto">
-            <div className="navbar">
+        <nav className="bg-gray-100">
+            <div className="navbar max-w-screen-xl mx-auto py-4 px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div
@@ -34,58 +34,113 @@ const Navbar = () => {
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
-                                        isActive ? "active" : ""
+                                        `tab ${
+                                            isActive
+                                                ? "text-warmOrange"
+                                                : "hover:text-[#608BC1"
+                                        }`
                                     }
                                 >
                                     Home
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/donation-campaigns">
+                                <NavLink
+                                    to="/donation-campaigns"
+                                    className={({ isActive }) =>
+                                        `tab ${
+                                            isActive ? "text-warmOrange" : ""
+                                        }`
+                                    }
+                                >
                                     Donation Campaigns
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/how-to-help">How to Help</NavLink>
+                                <NavLink
+                                    to="/how-to-help"
+                                    className={({ isActive }) =>
+                                        `tab ${
+                                            isActive ? "text-warmOrange" : ""
+                                        }`
+                                    }
+                                >
+                                    How to Help
+                                </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/dashboard">Dashboard</NavLink>
+                                <NavLink
+                                    to="/dashboard"
+                                    className={({ isActive }) =>
+                                        `tab ${
+                                            isActive ? "text-warmOrange" : ""
+                                        }`
+                                    }
+                                >
+                                    Dashboard
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
-                    <Link
-                        to="/"
-                        className="text-2xl font-bold gap-0 hover:bg-transparent"
-                    >
+
+                    <NavLink to="/" className="text-2xl font-bold gap-0">
                         <span className="text-darkBlue">Winter</span>
                         <span className="text-warmOrange">Aid</span>
-                    </Link>
+                    </NavLink>
                 </div>
+
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 font-medium">
                         <li>
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    `tab ${isActive ? "text-warmOrange" : ""}`
+                                }
+                            >
+                                Home
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/donation-campaigns">
+                            <NavLink
+                                to="/donation-campaigns"
+                                className={({ isActive }) =>
+                                    `tab ${isActive ? "text-warmOrange" : ""}`
+                                }
+                            >
                                 Donation Campaigns
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/how-to-help">How to Help</NavLink>
+                            <NavLink
+                                to="/how-to-help"
+                                className={({ isActive }) =>
+                                    `tab ${isActive ? "text-warmOrange" : ""}`
+                                }
+                            >
+                                How to Help
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/dashboard">Dashboard</NavLink>
+                            <NavLink
+                                to="/dashboard"
+                                className={({ isActive }) =>
+                                    `tab ${isActive ? "text-warmOrange" : ""}`
+                                }
+                            >
+                                Dashboard
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
+
                 <div className="navbar-end">
-                    <Link
+                    <NavLink
                         to="/login"
-                        className="btn bg-[#E76F1B] text-white px-6 hover:bg-secondary"
+                        className="bg-[#E76F1B] text-white font-medium px-6 py-2 rounded-md hover:bg-darkBlue"
                     >
                         Login
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
         </nav>
