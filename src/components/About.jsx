@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const About = () => {
     return (
         <section className="bg-gray-100 mt-20 py-12">
-            <div className="max-w-screen-xl mx-auto px-4">
+            <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl text-primary font-bold text-center mb-8">
                     About Us
                 </h2>
@@ -24,7 +24,7 @@ const About = () => {
                         them the most.
                     </p>
 
-                    <div className="flex justify-between">
+                    <div className="flex flex-col lg:flex-row justify-between">
                         <div>
                             <h3 className="text-2xl font-semibold mt-8 mb-4">
                                 How You Can Contribute

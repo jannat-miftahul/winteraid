@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home";
+import DonationCampaign from "../pages/DonationCampaign";
+import CampaignDetails from "../pages/CampaignDetails";
 
 const routes = createBrowserRouter([
     {
@@ -13,7 +15,8 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/donation-campaigns",
-                element: <h1>Donation Campaigns</h1>,
+                element: <DonationCampaign />,
+                loader: () => fetch("../donation.json"),
             },
             {
                 path: "/how-to-help",
@@ -23,12 +26,16 @@ const routes = createBrowserRouter([
                 path: "/dashboard",
                 element: <h1>Dashboard</h1>,
             },
+            {
+                path: "/campaign/:id", 
+                element: <CampaignDetails />,
+            },
         ],
     },
     {
         path: "*",
         element: <h1>404 Not Found</h1>,
-    }
+    },
 ]);
 
 export default routes;

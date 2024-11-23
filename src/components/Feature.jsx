@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Feature = () => {
     return (
-        <section className="bg-white mt-20 py-12">
-            <div className="container mx-auto px-4">
+        <section className="bg-gray-100 mt-20 py-12">
+            <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-8">
                     Featured Campaign
                 </h2>
@@ -17,7 +17,7 @@ const Feature = () => {
                         <h3 className="text-2xl font-semibold mb-4">
                             Winter Warmth Drive
                         </h3>
-                        <p className="mb-4">
+                        <p className="mb-8">
                             Our Winter Warmth Drive is dedicated to providing
                             essential winter clothing and supplies to those in
                             need. Join us in making a difference this winter by

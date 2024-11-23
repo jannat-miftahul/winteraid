@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Volunteer = () => {
     return (
-        <section className="bg-gray-100 mt-20 py-12">
-            <div className="container mx-auto px-4">
+        <section className="bg-white mt-20 py-12">
+            <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-8">
                     Volunteer Spotlight
                 </h2>
@@ -17,7 +17,7 @@ const Volunteer = () => {
                         <h3 className="text-2xl font-semibold mb-4">
                             Mark Johnson
                         </h3>
-                        <p className="mb-4">
+                        <p className="mb-8">
                             Mark has been a dedicated volunteer with WinterAid
                             for over 5 years. His commitment to helping those in
                             need has made a significant impact on our community.
