@@ -27,7 +27,7 @@ const HowItWorks = () => {
                                 Pack the items securely in a bag or box.
                             </li>
                             <li className="mb-2">
-                                Label the bag or box with "WinterAid Donation".
+                                Label the bag or box with &quot;WinterAid Donation&quot;.
                             </li>
                             <li className="mb-2">
                                 Drop off the donation at one of our designated

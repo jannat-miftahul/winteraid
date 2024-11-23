@@ -116,6 +116,28 @@ const About = () => {
                             />
                         </div>
                     </div>
+
+                    <div className="mt-8 text-center">
+                        <h3 className="text-2xl font-semibold mb-4">
+                            Get Involved
+                        </h3>
+                        <p className="mb-4">
+                            Join us in making a difference. Your support can
+                            help us reach more people in need.
+                        </p>
+                        <div className="space-x-4">
+                            <NavLink
+                                to="/donate"
+                                className="bg-accent text-white font-medium px-6 py-3 rounded-lg hover:bg-darkBlue"
+                            >
+                                Donate Now
+                            </NavLink>
+                        </div>
+                    </div>
+
+                    <p className="mt-8 text-center font-semibold">
+                        Thank you for your support!
+                    </p>
                 </div>
             </div>
         </section>
