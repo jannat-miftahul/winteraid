@@ -53,10 +53,13 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                    <a className="text-2xl font-bold gap-0 hover:bg-transparent">
+                    <Link
+                        to="/"
+                        className="text-2xl font-bold gap-0 hover:bg-transparent"
+                    >
                         <span className="text-darkBlue">Winter</span>
                         <span className="text-warmOrange">Aid</span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -77,7 +80,12 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to="/login" className="btn bg-[#E76F1B] text-white px-6 hover:bg-secondary">Login</Link>
+                    <Link
+                        to="/login"
+                        className="btn bg-[#E76F1B] text-white px-6 hover:bg-secondary"
+                    >
+                        Login
+                    </Link>
                 </div>
             </div>
         </nav>
