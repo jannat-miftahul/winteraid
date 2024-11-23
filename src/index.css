@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a.active {
+    color: #B8001F;
+    border: 1px solid #B8001F;
+}

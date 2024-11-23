@@ -1,10 +1,16 @@
+import { Outlet } from "react-router-dom";
 import Banner from "../components/Banner";
 
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
+            {/* Banner */}
             <Banner />
+
+            {/* Content */}
+
+            {/* Dynamic Nested Routes */}
+            <Outlet />
         </div>
     );
 };

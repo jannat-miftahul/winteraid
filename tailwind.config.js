@@ -10,6 +10,8 @@ export default {
                 secondary: "#507687",
                 background: "#FCFAEE",
                 accent: "#B8001F",
+                darkBlue: "#03131A",
+                warmOrange: "#E76F1B",
             },
             fontFamily: {
                 noto: ["Noto Sans", "sans-serif"],

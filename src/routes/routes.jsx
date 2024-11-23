@@ -10,7 +10,19 @@ const routes = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
-            }
+            },
+            {
+                path: "/donation-campaigns",
+                element: <h1>Donation Campaigns</h1>,
+            },
+            {
+                path: "/how-to-help",
+                element: <h1>How to Help</h1>,
+            },
+            {
+                path: "/dashboard",
+                element: <h1>Dashboard</h1>,
+            },
         ],
     },
     {
