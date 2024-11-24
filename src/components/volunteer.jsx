@@ -26,7 +26,7 @@ const Volunteer = () => {
                         </p>
                         <NavLink
                             to="/volunteer"
-                            className="bg-primary text-white font-medium px-6 py-3 rounded-lg hover:bg-darkBlue"
+                            className="bg-primary text-white font-medium px-6 py-3 rounded-lg hover:bg-primary"
                         >
                             Join Us
                         </NavLink>

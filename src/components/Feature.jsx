@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Feature = () => {
     return (
-        <section className="bg-gray-100 mt-20 py-12">
+        <section className="bg-background py-20">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-8">
                     Featured Campaign
@@ -25,7 +25,7 @@ const Feature = () => {
                         </p>
                         <NavLink
                             to="/donation-campaigns"
-                            className="bg-warmOrange text-white font-medium px-6 py-3 rounded-lg hover:bg-darkBlue"
+                            className="bg-secondary text-white font-medium px-6 py-3 rounded-lg hover:bg-primary"
                         >
                             Learn More
                         </NavLink>

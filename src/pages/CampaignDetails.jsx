@@ -40,7 +40,7 @@ const CampaignDetails = () => {
     };
 
     return (
-        <section className="bg-gray-100 py-12">
+        <section className="bg-background py-12">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-8">
                     {campaign.title}
@@ -148,7 +148,7 @@ const CampaignDetails = () => {
 
                     <button
                         type="submit"
-                        className="bg-primary text-white font-medium px-6 py-3 rounded-lg hover:bg-darkBlue"
+                        className="bg-primary text-white font-medium px-6 py-3 rounded-lg hover:bg-primary"
                     >
                         Submit
                     </button>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const About = () => {
     return (
-        <section className="bg-gray-100 mt-20 py-12">
+        <section className="bg-background py-20">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl text-primary font-bold text-center mb-8">
                     About Us
@@ -129,7 +129,7 @@ const About = () => {
                         <div className="">
                             <NavLink
                                 to="/donation-campaigns"
-                                className="btn bg-warmOrange text-white px-4 py-2 rounded-full hover:bg-darkBlue"
+                                className="btn bg-secondary text-white px-4 py-2 rounded-full hover:bg-primary"
                             >
                                 Donate Now
                                 <CgArrowTopRight />

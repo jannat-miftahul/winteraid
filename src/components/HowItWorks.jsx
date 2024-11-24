@@ -83,7 +83,7 @@ const HowItWorks = () => {
                         WinterAid operates in the following divisions of
                         Bangladesh:
                     </p>
-                    <ul className="list-disc list-inside mb-4">
+                    <ul className="list-disc list-inside">
                         <li className="mb-2">Dhaka</li>
                         <li className="mb-2">Chittagong</li>
                         <li className="mb-2">Khulna</li>

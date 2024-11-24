@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#181C14] text-white py-8 mt-20">
+        <footer className="bg-[#181C14] text-white py-8">
             <div className="w-11/12 mx-auto">
                 <div className="flex flex-col md:flex-row justify-between md:items-center gap-8">
                     {/* Company Information */}
@@ -14,7 +14,7 @@ const Footer = () => {
                             className="text-2xl font-bold gap-0 hover:bg-transparent"
                         >
                             <span className="text-white">Winter</span>
-                            <span className="text-warmOrange">Aid</span>
+                            <span className="text-secondary">Aid</span>
                         </Link>
                         <p className="">
                             WinterAid is a non-profit organization dedicated to
@@ -38,7 +38,7 @@ const Footer = () => {
                                 href="https://facebook.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-warmOrange"
+                                className="hover:text-secondary"
                             >
                                 <SiFacebook size={24} />
                             </a>
@@ -46,7 +46,7 @@ const Footer = () => {
                                 href="https://twitter.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-warmOrange"
+                                className="hover:text-secondary"
                             >
                                 <BsTwitterX size={24} />
                             </a>
@@ -54,7 +54,7 @@ const Footer = () => {
                                 href="https://instagram.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-warmOrange"
+                                className="hover:text-secondary"
                             >
                                 <SiInstagram size={24} />
                             </a>

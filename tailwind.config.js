@@ -6,12 +6,12 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: "#384B70",
-                secondary: "#507687",
+                Blue: "#384B70",
+                primary: "#03131A",
+                lightBlue: "#507687",
+                secondary: "#E76F1B",
                 background: "#FCFAEE",
                 accent: "#B8001F",
-                darkBlue: "#03131A",
-                warmOrange: "#E76F1B",
             },
             fontFamily: {
                 noto: ["Noto Sans", "sans-serif"],

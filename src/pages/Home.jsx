@@ -3,7 +3,8 @@ import Banner from "../components/Banner";
 import About from "../components/About";
 import HowItWorks from "../components/HowItWorks";
 import Feature from "../components/Feature";
-import Volunteer from "../components/volunteer";
+// import Volunteer from "../components/volunteer";
+import ShareWarmth from "../components/ShareWarmth";
 
 const Home = () => {
     return (
@@ -20,7 +21,11 @@ const Home = () => {
             {/* Feature Section */}
             <Feature />
 
-            <Volunteer />
+            {/* Volunteer Section */}
+            {/* <Volunteer /> */}
+
+            {/* Share Warmth Section */}
+            <ShareWarmth />
 
             {/* Dynamic Nested Routes */}
             <Outlet />

@@ -1,8 +1,9 @@
+import { CgArrowTopRight } from "react-icons/cg";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-100">
+        <nav className="bg-background">
             <div className="navbar max-w-screen-xl mx-auto py-4 px-4">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -36,7 +37,7 @@ const Navbar = () => {
                                     className={({ isActive }) =>
                                         `tab ${
                                             isActive
-                                                ? "text-warmOrange"
+                                                ? "text-secondary"
                                                 : "hover:text-[#608BC1"
                                         }`
                                     }
@@ -49,7 +50,7 @@ const Navbar = () => {
                                     to="/donation-campaigns"
                                     className={({ isActive }) =>
                                         `tab ${
-                                            isActive ? "text-warmOrange" : ""
+                                            isActive ? "text-secondary" : ""
                                         }`
                                     }
                                 >
@@ -61,7 +62,7 @@ const Navbar = () => {
                                     to="/how-to-help"
                                     className={({ isActive }) =>
                                         `tab ${
-                                            isActive ? "text-warmOrange" : ""
+                                            isActive ? "text-secondary" : ""
                                         }`
                                     }
                                 >
@@ -73,7 +74,7 @@ const Navbar = () => {
                                     to="/dashboard"
                                     className={({ isActive }) =>
                                         `tab ${
-                                            isActive ? "text-warmOrange" : ""
+                                            isActive ? "text-secondary" : ""
                                         }`
                                     }
                                 >
@@ -84,8 +85,8 @@ const Navbar = () => {
                     </div>
 
                     <NavLink to="/" className="text-2xl font-bold gap-0">
-                        <span className="text-darkBlue">Winter</span>
-                        <span className="text-warmOrange">Aid</span>
+                        <span className="text-primary">Winter</span>
+                        <span className="text-secondary">Aid</span>
                     </NavLink>
                 </div>
 
@@ -95,7 +96,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/"
                                 className={({ isActive }) =>
-                                    `tab ${isActive ? "text-warmOrange" : ""}`
+                                    `tab ${isActive ? "text-secondary" : ""}`
                                 }
                             >
                                 Home
@@ -105,7 +106,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/donation-campaigns"
                                 className={({ isActive }) =>
-                                    `tab ${isActive ? "text-warmOrange" : ""}`
+                                    `tab ${isActive ? "text-secondary" : ""}`
                                 }
                             >
                                 Donation Campaigns
@@ -115,7 +116,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/how-to-help"
                                 className={({ isActive }) =>
-                                    `tab ${isActive ? "text-warmOrange" : ""}`
+                                    `tab ${isActive ? "text-secondary" : ""}`
                                 }
                             >
                                 How to Help
@@ -125,7 +126,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/dashboard"
                                 className={({ isActive }) =>
-                                    `tab ${isActive ? "text-warmOrange" : ""}`
+                                    `tab ${isActive ? "text-secondary" : ""}`
                                 }
                             >
                                 Dashboard
@@ -137,9 +138,10 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <NavLink
                         to="/login"
-                        className="bg-[#E76F1B] text-white font-medium px-6 py-2 rounded-md hover:bg-darkBlue"
+                        className="btn bg-accent text-white px-6 py-2 rounded-full hover:bg-primary"
                     >
                         Login
+                        <CgArrowTopRight size={20} />
                     </NavLink>
                 </div>
             </div>
