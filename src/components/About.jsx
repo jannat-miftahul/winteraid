@@ -1,3 +1,4 @@
+import { CgArrowTopRight } from "react-icons/cg";
 import { NavLink } from "react-router-dom";
 
 const About = () => {
@@ -125,12 +126,13 @@ const About = () => {
                             Join us in making a difference. Your support can
                             help us reach more people in need.
                         </p>
-                        <div className="space-x-4">
+                        <div className="">
                             <NavLink
-                                to="/donate"
-                                className="bg-accent text-white font-medium px-6 py-3 rounded-lg hover:bg-darkBlue"
+                                to="/donation-campaigns"
+                                className="btn bg-warmOrange text-white px-4 py-2 rounded-full hover:bg-darkBlue"
                             >
                                 Donate Now
+                                <CgArrowTopRight />
                             </NavLink>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import campaignsData from "../../public/donation.json";
+import toast from "react-hot-toast";
 
 const CampaignDetails = () => {
     const { id } = useParams();
@@ -13,26 +14,34 @@ const CampaignDetails = () => {
         pickupLocation: "",
         notes: "",
     });
-    const [showToast, setShowToast] = useState(false);
-
-    if (!campaign) {
-        return <div>Campaign not found</div>;
-    }
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
+    const isQuantityValid = () => {
+        return !isNaN(formData.quantity) && formData.quantity > 0;
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        setShowToast(true);
-        setTimeout(() => setShowToast(false), 3000);
+        if (!isQuantityValid()) {
+            toast.error("Please enter a valid quantity");
+            return;
+        }
+        toast.success("Thank you! We will reach your destination soon.");
+        setFormData({
+            quantity: "",
+            itemType: "",
+            pickupLocation: "",
+            notes: "",
+        });
     };
 
     return (
         <section className="bg-gray-100 py-12">
-            <div className="container mx-auto px-4">
+            <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-8">
                     {campaign.title}
                 </h2>
@@ -56,7 +65,7 @@ const CampaignDetails = () => {
                     </div>
                 </div>
 
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl font-semibold mt-12 mb-4">
                     Donate to this Campaign
                 </h3>
 
@@ -82,6 +91,7 @@ const CampaignDetails = () => {
                             required
                         />
                     </div>
+
                     <div className="mb-4">
                         <label
                             className="block text-gray-700 mb-2"
@@ -100,6 +110,7 @@ const CampaignDetails = () => {
                             required
                         />
                     </div>
+
                     <div className="mb-4">
                         <label
                             className="block text-gray-700 mb-2"
@@ -118,6 +129,7 @@ const CampaignDetails = () => {
                             required
                         />
                     </div>
+
                     <div className="mb-4">
                         <label
                             className="block text-gray-700 mb-2"
@@ -133,6 +145,7 @@ const CampaignDetails = () => {
                             className="w-full px-3 py-2 border rounded-lg"
                         ></textarea>
                     </div>
+
                     <button
                         type="submit"
                         className="bg-primary text-white font-medium px-6 py-3 rounded-lg hover:bg-darkBlue"
@@ -140,12 +153,6 @@ const CampaignDetails = () => {
                         Submit
                     </button>
                 </form>
-
-                {showToast && (
-                    <div className="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-md">
-                        Thank you! We will reach your destination soon.
-                    </div>
-                )}
             </div>
         </section>
     );
