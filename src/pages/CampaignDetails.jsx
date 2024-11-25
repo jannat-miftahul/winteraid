@@ -148,7 +148,7 @@ const CampaignDetails = () => {
 
                     <button
                         type="submit"
-                        className="bg-primary text-white font-medium px-6 py-3 rounded-lg hover:bg-primary"
+                        className="bg-Blue text-white font-medium px-6 py-3 rounded-lg hover:bg-lightBlue"
                     >
                         Submit
                     </button>

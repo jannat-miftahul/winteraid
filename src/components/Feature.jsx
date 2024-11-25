@@ -1,3 +1,4 @@
+import { RxDoubleArrowRight } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 
 const Feature = () => {
@@ -9,7 +10,7 @@ const Feature = () => {
                 </h2>
                 <div className="flex flex-col md:flex-row items-center gap-6">
                     <img
-                        src="https://i.ibb.co.com/52YSNLV/9c3d2883adcc17ef8fc365b6ca0f9412.jpg"
+                        src="https://i.ibb.co.com/vwDGNjr/2e2884bec093.jpg"
                         alt="Featured Campaign"
                         className="w-full md:w-1/2 h-96 rounded-lg shadow-md md:mr-4"
                     />
@@ -24,10 +25,11 @@ const Feature = () => {
                             donating coats, hats, gloves, and blankets.
                         </p>
                         <NavLink
-                            to="/donation-campaigns"
-                            className="bg-secondary text-white font-medium px-6 py-3 rounded-lg hover:bg-primary"
+                            to="/campaign/1"
+                            className="btn bg-secondary text-white px-6 py-3 rounded-full hover:bg-primary"
                         >
                             Learn More
+                            <RxDoubleArrowRight size={20} />
                         </NavLink>
                     </div>
                 </div>

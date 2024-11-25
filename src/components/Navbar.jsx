@@ -1,5 +1,5 @@
 import { CgArrowTopRight } from "react-icons/cg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -136,13 +136,13 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end">
-                    <NavLink
-                        to="/login"
+                    <Link
+                        to="/auth/signin"
                         className="btn bg-accent text-white px-6 py-2 rounded-full hover:bg-primary"
                     >
                         Login
                         <CgArrowTopRight size={20} />
-                    </NavLink>
+                    </Link>
                 </div>
             </div>
         </nav>

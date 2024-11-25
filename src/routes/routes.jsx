@@ -3,6 +3,10 @@ import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home";
 import DonationCampaign from "../pages/DonationCampaign";
 import CampaignDetails from "../pages/CampaignDetails";
+import AuthLayout from "../layout/AuthLayout";
+// import Signin from "../pages/Signin";
+import SignUp from "../pages/SignUp";
+import Signin from "../pages/Signin";
 
 const routes = createBrowserRouter([
     {
@@ -27,8 +31,22 @@ const routes = createBrowserRouter([
                 element: <h1>Dashboard</h1>,
             },
             {
-                path: "/campaign/:id", 
+                path: "/campaign/:id",
                 element: <CampaignDetails />,
+            },
+        ],
+    },
+    {
+        path: "auth",
+        element: <AuthLayout />,
+        children: [
+            {
+                path: "/auth/signin",
+                element:<Signin />,
+            },
+            {
+                path: "/auth/signup",
+                element: <SignUp />,
             },
         ],
     },

@@ -3,7 +3,7 @@ import Banner from "../components/Banner";
 import About from "../components/About";
 import HowItWorks from "../components/HowItWorks";
 import Feature from "../components/Feature";
-// import Volunteer from "../components/volunteer";
+import Volunteer from "../components/volunteer";
 import ShareWarmth from "../components/ShareWarmth";
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
             <Feature />
 
             {/* Volunteer Section */}
-            {/* <Volunteer /> */}
+            <Volunteer />
 
             {/* Share Warmth Section */}
             <ShareWarmth />

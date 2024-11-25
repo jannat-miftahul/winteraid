@@ -1,15 +1,16 @@
+import { AiFillCaretRight } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 
 const Volunteer = () => {
     return (
-        <section className="bg-white mt-20 py-12">
+        <section className="bg-white py-20">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-8">
                     Volunteer Spotlight
                 </h2>
                 <div className="flex flex-col md:flex-row items-center gap-6">
                     <img
-                        src="https://i.ibb.co.com/BqnW5Wr/65ad6b393d074440828f0eb122825c48.jpg" // Replace with a suitable image URL
+                        src="https://i.ibb.co.com/Dz8Jqqg/volunteer.jpg"
                         alt="Volunteer Spotlight"
                         className="w-full md:w-1/2 h-96 rounded-lg shadow-md object-cover md:mr-4"
                     />
@@ -26,9 +27,10 @@ const Volunteer = () => {
                         </p>
                         <NavLink
                             to="/volunteer"
-                            className="bg-primary text-white font-medium px-6 py-3 rounded-lg hover:bg-primary"
+                            className="btn bg-Blue text-white font-medium px-6 py-3 rounded-full hover:bg-secondary"
                         >
                             Join Us
+                            <AiFillCaretRight size={20} />
                         </NavLink>
                     </div>
                 </div>

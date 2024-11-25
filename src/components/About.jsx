@@ -103,17 +103,17 @@ const About = () => {
                             <img
                                 src="https://i.ibb.co.com/G558fmp/8e98f1060282f903db4c26833a32e035.jpg"
                                 alt="Gallery Image 1"
-                                className="w-full h-full rounded-lg shadow-md object-contain"
+                                className="w-full h-full rounded-lg shadow-md object-center"
                             />
                             <img
                                 src="https://i.ibb.co.com/KbhyPgn/8a671ce771a88dace6aeacf1f4251432.jpg"
                                 alt="Gallery Image 2"
-                                className="w-full h-full rounded-lg shadow-md object-contain"
+                                className="w-full h-full rounded-lg shadow-md object-cente"
                             />
                             <img
                                 src="https://i.ibb.co.com/ZVMZcdj/fd1ccd647e473dead4ccb3720a72e91b.jpg"
                                 alt="Gallery Image 3"
-                                className="w-full h-full rounded-lg shadow-md object-contain"
+                                className="w-full h-full rounded-lg shadow-md object-center"
                             />
                         </div>
                     </div>
@@ -132,7 +132,7 @@ const About = () => {
                                 className="btn bg-secondary text-white px-4 py-2 rounded-full hover:bg-primary"
                             >
                                 Donate Now
-                                <CgArrowTopRight />
+                                <CgArrowTopRight size={20} />
                             </NavLink>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import { BsGift } from "react-icons/bs";
-import { FaHandshakeSimple } from "react-icons/fa6";
+import { FaRegHandshake } from "react-icons/fa6";
 import { HiOutlineWifi } from "react-icons/hi";
 import { PiPhoneCallDuotone } from "react-icons/pi";
 import { NavLink } from "react-router-dom";
@@ -18,7 +18,7 @@ const ShareWarmth = () => {
                 <div className="flex justify-center space-x-4">
                     <div>
                         <NavLink
-                            to="/donate"
+                            to="/donation-campaigns"
                             className="btn btn-circle bg-lightBlue text-white font-medium h-32 w-32 hover:bg-secondary"
                         >
                             <BsGift size={44} />
@@ -29,10 +29,10 @@ const ShareWarmth = () => {
                     {/* buttons */}
                     <div>
                         <NavLink
-                            to="/donate"
+                            to="/volunteer"
                             className="btn btn-circle bg-Blue text-white font-medium h-32 w-32 hover:bg-secondary"
                         >
-                            <FaHandshakeSimple size={44} />
+                            <FaRegHandshake size={44} />
                         </NavLink>
                         <h3 className="text-lg font-semibold mt-2">
                             Volunteer
@@ -41,7 +41,7 @@ const ShareWarmth = () => {
 
                     <div>
                         <NavLink
-                            to="/donate"
+                            to="/contact"
                             className="btn btn-circle bg-lightBlue text-white font-medium h-32 w-32 hover:bg-secondary"
                         >
                             <PiPhoneCallDuotone size={44} />
@@ -51,7 +51,7 @@ const ShareWarmth = () => {
 
                     <div>
                         <NavLink
-                            to="/contact"
+                            to="/connect"
                             className="btn btn-circle bg-Blue text-white font-medium h-32 w-32 hover:bg-secondary"
                         >
                             <HiOutlineWifi size={44} />
