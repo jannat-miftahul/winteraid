@@ -18,7 +18,7 @@ const CampaignCard = ({ campaign }) => {
 
                 <NavLink
                     to={`/campaign/${id}`}
-                    className="btn bg-secondary text-white px-4 py-2 rounded-full hover:bg-primary"
+                    className="btn bg-secondary text-white px-4 py-2 rounded-full hover:bg-primary gap-0"
                 >
                     Donate Now
                     <CgArrowTopRight size={20} />

@@ -4,9 +4,10 @@ import Home from "../pages/Home";
 import DonationCampaign from "../pages/DonationCampaign";
 import CampaignDetails from "../pages/CampaignDetails";
 import AuthLayout from "../layout/AuthLayout";
-// import Signin from "../pages/Signin";
+import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
-import Signin from "../pages/Signin";
+import SecuredRoutes from "./SecuredRoutes";
+import Dashboard from "../pages/Dashboard";
 
 const routes = createBrowserRouter([
     {
@@ -28,11 +29,16 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/dashboard",
-                element: <h1>Dashboard</h1>,
+                element: <Dashboard />,
             },
             {
                 path: "/campaign/:id",
-                element: <CampaignDetails />,
+                element: (
+                    <SecuredRoutes>
+                        <CampaignDetails />,
+                    </SecuredRoutes>
+                ),
+                // loader: () => fetch("../donation.json"),
             },
         ],
     },
@@ -42,7 +48,7 @@ const routes = createBrowserRouter([
         children: [
             {
                 path: "/auth/signin",
-                element:<Signin />,
+                element: <SignIn />,
             },
             {
                 path: "/auth/signup",
@@ -52,7 +58,7 @@ const routes = createBrowserRouter([
     },
     {
         path: "*",
-        element: <h1>404 Not Found</h1>,
+        element: <h1 className="text-5xl text-center text-red-600">404 Not Found</h1>,
     },
 ]);
 

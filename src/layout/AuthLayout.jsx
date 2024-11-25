@@ -3,10 +3,11 @@ import Navbar from "../components/Navbar";
 
 const AuthLayout = () => {
     return (
-        <div className="bg-gray-100">
-            <header className="w-11/12 mx-auto">
+        <div className="bg-gray-100 space-y-4">
+            <header>
                 <Navbar />
             </header>
+
             <Outlet />
         </div>
     );

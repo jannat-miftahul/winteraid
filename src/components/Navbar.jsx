@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { CgArrowTopRight } from "react-icons/cg";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
     return (
         <nav className="bg-background">
-            <div className="navbar max-w-screen-xl mx-auto py-4 px-4">
+            <div className="navbar max-w-screen-xl mx-auto py-4 px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div
@@ -36,9 +40,7 @@ const Navbar = () => {
                                     to="/"
                                     className={({ isActive }) =>
                                         `tab ${
-                                            isActive
-                                                ? "text-secondary"
-                                                : "hover:text-[#608BC1"
+                                            isActive ? "text-secondary" : ""
                                         }`
                                     }
                                 >
@@ -135,14 +137,42 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <div className="navbar-end">
-                    <Link
-                        to="/auth/signin"
-                        className="btn bg-accent text-white px-6 py-2 rounded-full hover:bg-primary"
-                    >
-                        Login
-                        <CgArrowTopRight size={20} />
-                    </Link>
+                <div className="navbar-end flex items-center gap-4">
+                    <div>
+                        {user && user?.email ? (
+                            <div className="flex flex-col items-center">
+                                <img
+                                    src={
+                                        user?.photoURL ||
+                                        "https://i.ibb.co.com/P1n2z8D/profile-icon-design-free-vector.jpg"
+                                    }
+                                    alt="user"
+                                    className="w-10 h-10 rounded-full"
+                                />
+                                <p className="text-sm">{user?.displayName}</p>
+                            </div>
+                        ) : (
+                            ""
+                        )}
+                    </div>
+
+                    <div>
+                        {user && user?.email ? (
+                            <Link
+                                onClick={logOut}
+                                className="btn bg-accent text-white px-6 py-2 rounded-full hover:bg-primary gap-0"
+                            >
+                                Logout <CgArrowTopRight size={20} />
+                            </Link>
+                        ) : (
+                            <Link
+                                to="/auth/signin"
+                                className="btn bg-accent text-white px-6 py-2 rounded-full hover:bg-primary gap-0"
+                            >
+                                Login <CgArrowTopRight size={20} />
+                            </Link>
+                        )}
+                    </div>
                 </div>
             </div>
         </nav>

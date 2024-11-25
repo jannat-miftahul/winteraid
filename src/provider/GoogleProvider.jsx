@@ -1,47 +1,34 @@
-import { useEffect, useState } from "react";
-import { createContext } from "react";
-import app from "../firebase/firebase.config";
-import { auth, googleProvider } from "../firebase/firebase"
-import { signInWithPopup } from "firebase/auth";
-
-import {
-    createUserWithEmailAndPassword,
-    getAuth,
-    onAuthStateChanged,
-    signInWithEmailAndPassword,
-    signOut,
-    updateProfile,
-} from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import PropTypes from "prop-types";
+import { auth, googleProvider } from "../firebase/firebase";
 
 export const AuthContext = createContext();
-const authData = getAuth(app);
 
-const AuthProvider = ({ children }) => {
+const GoogleProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
     // console.log(loading, user);
 
     const createNewUser = (email, password) => {
         setLoading(true);
-        return createUserWithEmailAndPassword(authData, email, password);
+        return createUserWithEmailAndPassword(auth, email, password);
     };
 
     const userLogin = (email, password) => {
         setLoading(true);
-        return signInWithEmailAndPassword(authData, email, password);
+        return signInWithEmailAndPassword(auth, email, password);
     };
 
     const logOut = () => {
         setLoading(true);
-        return signOut(authData);
+        return signOut(auth);
     };
 
     const updateUserProfile = (updatedData) => {
         setLoading(true);
-        return updateProfile(authData.currentUser, updatedData);
+        return updateProfile(auth.currentUser, updatedData);
     };
-
     const signInWithGoogle = async () => {
         try {
             const result = await signInWithPopup(auth, googleProvider);
@@ -63,7 +50,7 @@ const AuthProvider = ({ children }) => {
     };
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(authData, (currentUser) => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
             setLoading(false);
         });
@@ -75,8 +62,8 @@ const AuthProvider = ({ children }) => {
     );
 };
 
-AuthProvider.propTypes = {
+GoogleProvider.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-export default AuthProvider;
+export default GoogleProvider;
