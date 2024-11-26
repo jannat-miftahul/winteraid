@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
+import toast from "react-hot-toast";
 
 const SignIn = () => {
     const { userLogin, setUser, signInWithGoogle } = useContext(AuthContext);
@@ -26,6 +27,7 @@ const SignIn = () => {
             })
             .catch((err) => {
                 setError({ ...error, login: err.code });
+                toast.error(err.message);
             });
     };
 
@@ -35,6 +37,7 @@ const SignIn = () => {
             navigate("/");
         } catch (error) {
             setError({ ...error, general: error.message });
+            toast.error(error.message);
         }
     };
 
