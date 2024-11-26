@@ -10,6 +10,7 @@ import SecuredRoutes from "./SecuredRoutes";
 import Dashboard from "../pages/Dashboard";
 import ErrorPage from "../pages/ErrorPage";
 import HowToHelp from "../pages/HowToHelp";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const routes = createBrowserRouter([
     {
@@ -34,6 +35,14 @@ const routes = createBrowserRouter([
                 element: (
                     <SecuredRoutes>
                         <Dashboard />,
+                    </SecuredRoutes>
+                ),
+            },
+            {
+                path: "/update-profile",
+                element: (
+                    <SecuredRoutes>
+                        <UpdateProfile />,
                     </SecuredRoutes>
                 ),
             },
