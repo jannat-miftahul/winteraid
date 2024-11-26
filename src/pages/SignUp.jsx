@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import toast from "react-hot-toast";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 const SignUp = () => {
     const { createNewUser, setUser, updateUserProfile, signInWithGoogle } =
@@ -10,6 +11,7 @@ const SignUp = () => {
 
     const navigate = useNavigate();
     const [error, setError] = useState({});
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -68,6 +70,10 @@ const SignUp = () => {
         }
     };
 
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
     return (
         <div className="min-h-screen flex justify-center items-start">
             <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">
@@ -123,34 +129,34 @@ const SignUp = () => {
                         />
                     </div>
 
-                    <div className="form-control">
-                        {/* password */}
+                    <div className="form-control relative">
                         <label className="label">
                             <span className="label-text font-semibold">
                                 Password
                             </span>
                         </label>
                         <input
-                            type="password"
+                            type={showPassword ? "text" : "password"}
                             name="password"
-                            placeholder="password"
+                            placeholder="Enter your password"
                             className="input input-bordered"
                             required
                         />
+                        <div
+                            className="absolute inset-y-14 right-0 pr-3 flex items-center cursor-pointer"
+                            onClick={togglePasswordVisibility}
+                        >
+                            {showPassword ? (
+                                <AiFillEyeInvisible size={24} />
+                            ) : (
+                                <AiFillEye size={24} />
+                            )}
+                        </div>
                         {error.password && (
-                            <label className="label text-red-500 text-sm">
+                            <p className="text-red-500 text-sm mt-2">
                                 {error.password}
-                            </label>
+                            </p>
                         )}
-
-                        {/* accept term and condition */}
-                        <label className="cursor-pointer label justify-start gap-2">
-                            <input type="checkbox" className="checkbox" />
-                            <span className="checkbox-mark"></span>
-                            <span className="label-text">
-                                I accept the terms and conditions
-                            </span>
-                        </label>
                     </div>
 
                     <div className="form-control mt-6 space-y-2">
