@@ -9,6 +9,7 @@ import SignUp from "../pages/SignUp";
 import SecuredRoutes from "./SecuredRoutes";
 import Dashboard from "../pages/Dashboard";
 import ErrorPage from "../pages/ErrorPage";
+import HowToHelp from "../pages/HowToHelp";
 
 const routes = createBrowserRouter([
     {
@@ -26,7 +27,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/how-to-help",
-                element: <h1>How to Help</h1>,
+                element: <HowToHelp />,
             },
             {
                 path: "/dashboard",

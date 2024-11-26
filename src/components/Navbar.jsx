@@ -7,7 +7,7 @@ const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
 
     return (
-        <nav className="bg-background">
+        <nav className="bg-background backdrop-blur-md bg-opacity-45 sticky top-0 z-50">
             <div className="navbar max-w-screen-xl mx-auto py-4 px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
