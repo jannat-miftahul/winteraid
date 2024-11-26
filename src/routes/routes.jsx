@@ -8,6 +8,7 @@ import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
 import SecuredRoutes from "./SecuredRoutes";
 import Dashboard from "../pages/Dashboard";
+import ErrorPage from "../pages/ErrorPage";
 
 const routes = createBrowserRouter([
     {
@@ -58,7 +59,7 @@ const routes = createBrowserRouter([
     },
     {
         path: "*",
-        element: <h1 className="text-5xl text-center text-red-600">404 Not Found</h1>,
+        element: <ErrorPage />,
     },
 ]);
 
