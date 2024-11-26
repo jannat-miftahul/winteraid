@@ -18,7 +18,7 @@ const Dashboard = () => {
                             "https://i.ibb.co/P1n2z8D/profile-icon-design-free-vector.jpg"
                         }
                         alt="user"
-                        className="w-24 h-24 rounded-full mb-4"
+                        className="w-24 h-24 border rounded-full mb-4"
                     />
                     <p className="text-lg font-semibold">{user?.displayName}</p>
                     <p className="text-gray-700">{user?.email}</p>
