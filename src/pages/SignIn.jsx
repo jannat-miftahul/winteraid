@@ -34,7 +34,7 @@ const SignIn = () => {
     const handleGoogleSignIn = async () => {
         try {
             await signInWithGoogle();
-            navigate("/");
+            navigate(location?.state ? location.state : "/");
         } catch (error) {
             setError({ ...error, general: error.message });
             toast.error(error.message);
