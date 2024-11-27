@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const Volunteer = () => {
     return (
-        <section className="bg-white py-20" data-aos="flip-down">
+        <section className="bg-lightOrange py-20" data-aos="flip-down">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-3xl font-bold text-center mb-8">
+                <h2 className="text-3xl text-Blue font-bold text-center mb-8">
                     Volunteer Spotlight
                 </h2>
                 <div className="flex flex-col md:flex-row items-center gap-6">
@@ -27,7 +27,7 @@ const Volunteer = () => {
                         </p>
                         <NavLink
                             to="/volunteer"
-                            className="btn bg-Blue text-white font-medium px-6 py-3 rounded-full hover:bg-secondary"
+                            className="btn bg-primary text-white font-medium px-6 py-3 rounded-full hover:bg-Blue"
                         >
                             Join Us
                             <AiFillCaretRight size={20} />

@@ -13,7 +13,7 @@ const ErrorPage = () => {
                 </p>
                 <Link
                     to="/"
-                    className="btn bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary"
+                    className="btn bg-primary text-white px-6 py-3 rounded-full hover:bg-Orange"
                 >
                     Go Back Home
                 </Link>

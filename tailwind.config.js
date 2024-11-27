@@ -6,11 +6,14 @@ export default {
     theme: {
         extend: {
             colors: {
-                Blue: "#384B70",
+                // Blue: "#384B70",
+                Blue: "#004A98",
                 primary: "#181C14",
                 lightBlue: "#507687",
-                secondary: "#E76F1B",
-                background: "#FCFAEE",
+                Orange: "#E76F1B",
+                lightOrange: "#FFBF61",
+                // background: "#FCFAEE",
+                background: "#EEF5FF",
                 accent: "#B8001F",
             },
             fontFamily: {

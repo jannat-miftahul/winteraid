@@ -7,7 +7,7 @@ const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
 
     return (
-        <nav className="bg-background backdrop-blur-md bg-opacity-45 sticky top-0 z-50">
+        <nav className="bg-background backdrop-blur-md bg-opacity-60 sticky top-0 z-50">
             <div className="navbar max-w-screen-xl mx-auto py-4 px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -40,7 +40,7 @@ const Navbar = () => {
                                     to="/"
                                     className={({ isActive }) =>
                                         `tab ${
-                                            isActive ? "text-secondary" : ""
+                                            isActive ? "text-Orange" : ""
                                         }`
                                     }
                                 >
@@ -52,7 +52,7 @@ const Navbar = () => {
                                     to="/donation-campaigns"
                                     className={({ isActive }) =>
                                         `tab ${
-                                            isActive ? "text-secondary" : ""
+                                            isActive ? "text-Orange" : ""
                                         }`
                                     }
                                 >
@@ -64,7 +64,7 @@ const Navbar = () => {
                                     to="/how-to-help"
                                     className={({ isActive }) =>
                                         `tab ${
-                                            isActive ? "text-secondary" : ""
+                                            isActive ? "text-Orange" : ""
                                         }`
                                     }
                                 >
@@ -76,7 +76,7 @@ const Navbar = () => {
                                     to="/dashboard"
                                     className={({ isActive }) =>
                                         `tab ${
-                                            isActive ? "text-secondary" : ""
+                                            isActive ? "text-Orange" : ""
                                         }`
                                     }
                                 >
@@ -88,7 +88,7 @@ const Navbar = () => {
 
                     <NavLink to="/" className="text-2xl font-bold gap-0">
                         <span className="text-primary">Winter</span>
-                        <span className="text-secondary">Aid</span>
+                        <span className="text-Orange">Aid</span>
                     </NavLink>
                 </div>
 
@@ -98,7 +98,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/"
                                 className={({ isActive }) =>
-                                    `tab ${isActive ? "text-secondary" : ""}`
+                                    `tab ${isActive ? "text-Orange" : ""}`
                                 }
                             >
                                 Home
@@ -108,7 +108,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/donation-campaigns"
                                 className={({ isActive }) =>
-                                    `tab ${isActive ? "text-secondary" : ""}`
+                                    `tab ${isActive ? "text-Orange" : ""}`
                                 }
                             >
                                 Donation Campaigns
@@ -118,7 +118,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/how-to-help"
                                 className={({ isActive }) =>
-                                    `tab ${isActive ? "text-secondary" : ""}`
+                                    `tab ${isActive ? "text-Orange" : ""}`
                                 }
                             >
                                 How to Help
@@ -128,7 +128,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/dashboard"
                                 className={({ isActive }) =>
-                                    `tab ${isActive ? "text-secondary" : ""}`
+                                    `tab ${isActive ? "text-Orange" : ""}`
                                 }
                             >
                                 Dashboard

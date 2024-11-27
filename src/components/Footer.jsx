@@ -14,7 +14,7 @@ const Footer = () => {
                             className="text-2xl font-bold gap-0 hover:bg-transparent"
                         >
                             <span className="text-white">Winter</span>
-                            <span className="text-secondary">Aid</span>
+                            <span className="text-Orange">Aid</span>
                         </Link>
                         <p className="">
                             WinterAid is a non-profit organization dedicated to
@@ -38,7 +38,7 @@ const Footer = () => {
                                 href="https://facebook.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-secondary"
+                                className="hover:text-Orange"
                             >
                                 <SiFacebook size={24} />
                             </a>
@@ -46,7 +46,7 @@ const Footer = () => {
                                 href="https://twitter.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-secondary"
+                                className="hover:text-Orange"
                             >
                                 <BsTwitterX size={24} />
                             </a>
@@ -54,7 +54,7 @@ const Footer = () => {
                                 href="https://instagram.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-secondary"
+                                className="hover:text-Orange"
                             >
                                 <SiInstagram size={24} />
                             </a>

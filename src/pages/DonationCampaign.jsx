@@ -17,7 +17,7 @@ const DonationCampaign = () => {
         <section className="bg-background py-12">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0 space-y-8" data-aos="fade-up">
                 <div className="space-y-4">
-                    <h2 className="text-3xl font-bold text-center">
+                    <h2 className="text-3xl font-bold text-center text-Blue">
                         Donation Campaigns
                     </h2>
                     <p className="text-center text-gray-600">

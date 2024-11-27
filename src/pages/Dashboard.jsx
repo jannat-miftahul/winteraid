@@ -26,7 +26,7 @@ const Dashboard = () => {
                 <div className="mt-6 text-center">
                     <Link
                         to="/update-profile"
-                        className="btn bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary"
+                        className="btn bg-primary text-white px-6 py-2 rounded-full hover:bg-Orange"
                     >
                         Update Profile
                     </Link>

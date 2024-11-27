@@ -29,7 +29,7 @@ const HowToHelp = () => {
                         </p>
                         <Link
                             to="/donation-campaigns"
-                            className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary"
+                            className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-Orange"
                         >
                             View Campaigns
                         </Link>
@@ -47,7 +47,7 @@ const HowToHelp = () => {
                         </p>
                         <Link
                             to="/auth/signin"
-                            className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary"
+                            className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-Orange"
                         >
                             Donate Now
                         </Link>
@@ -63,7 +63,7 @@ const HowToHelp = () => {
                         </p>
                         <Link
                             to="/auth/signin"
-                            className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary"
+                            className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-Orange"
                         >
                             Sign Up
                         </Link>
@@ -81,7 +81,7 @@ const HowToHelp = () => {
                         </p>
                         <Link
                             to="/auth/signin"
-                            className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary"
+                            className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-Orange"
                         >
                             Learn More
                         </Link>

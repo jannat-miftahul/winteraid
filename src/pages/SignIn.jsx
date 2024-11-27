@@ -87,7 +87,7 @@ const SignIn = () => {
                         <label className="label">
                             <Link
                                 to="/auth/forgot-password"
-                                className="label-text-alt link link-hover text-secondary"
+                                className="label-text-alt link link-hover text-Orange"
                             >
                                 Forgot password?
                             </Link>

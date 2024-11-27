@@ -5,7 +5,7 @@ const Feature = () => {
     return (
         <section className="bg-background py-20" data-aos="flip-up">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-3xl font-bold text-center mb-8">
+                <h2 className="text-3xl text-Blue font-bold text-center mb-8">
                     Featured Campaign
                 </h2>
                 <div className="flex flex-col md:flex-row items-center gap-6">
@@ -26,7 +26,7 @@ const Feature = () => {
                         </p>
                         <NavLink
                             to="/campaign/1"
-                            className="btn bg-secondary text-white px-6 py-3 rounded-full hover:bg-primary"
+                            className="btn bg-Orange text-white px-6 py-3 rounded-full hover:bg-primary"
                         >
                             Learn More
                             <RxDoubleArrowRight size={20} />

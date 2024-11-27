@@ -7,7 +7,7 @@ const About = () => {
             <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
 
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-3xl text-primary font-bold text-center mb-8">
+                <h2 className="text-3xl text-Blue font-bold text-center mb-8">
                     About Us
                 </h2>
                 <div className="text-lg leading-relaxed">
@@ -29,7 +29,7 @@ const About = () => {
 
                     <div className="flex flex-col lg:flex-row justify-between">
                         <div data-aos="fade-right">
-                            <h3 className="text-2xl font-semibold mt-8 mb-4">
+                            <h3 className="text-2xl text-lightBlue font-semibold mt-8 mb-4">
                                 How You Can Contribute
                             </h3>
                             <p className="mb-4">
@@ -57,7 +57,7 @@ const About = () => {
                         </div>
 
                         <div data-aos="fade-left">
-                            <h3 className="text-2xl font-semibold mt-8 mb-4">
+                            <h3 className="text-2xl text-lightBlue font-semibold mt-8 mb-4">
                                 Our Impact
                             </h3>
                             <p className="mb-4">
@@ -79,7 +79,7 @@ const About = () => {
                     </div>
 
                     <div className="mt-8">
-                        <h3 className="text-2xl font-semibold mb-4">
+                        <h3 className="text-2xl text-lightBlue font-semibold mb-4">
                             Testimonials
                         </h3>
                         <div className="space-y-4">
@@ -99,7 +99,7 @@ const About = () => {
 
                     <div className="mt-8">
                         <h3
-                            className="text-2xl font-semibold mb-4"
+                            className="text-2xl text-lightBlue font-semibold mb-4"
                             data-aos="fade-up"
                         >
                             Our Work
@@ -127,7 +127,7 @@ const About = () => {
                     </div>
 
                     <div className="mt-8 text-center" data-aos="fade-up">
-                        <h3 className="text-2xl font-semibold mb-4">
+                        <h3 className="text-2xl text-lightBlue font-semibold mb-4">
                             Get Involved
                         </h3>
                         <p className="mb-4">
@@ -137,7 +137,7 @@ const About = () => {
                         <div>
                             <NavLink
                                 to="/donation-campaigns"
-                                className="btn bg-secondary text-white px-4 py-2 rounded-full hover:bg-primary"
+                                className="btn bg-Orange text-white px-4 py-2 rounded-full hover:bg-primary"
                             >
                                 Donate Now
                                 <CgArrowTopRight size={20} />
@@ -146,7 +146,7 @@ const About = () => {
                     </div>
 
                     <p
-                        className="mt-8 text-center font-semibold"
+                        className="mt-8 text-center text-accent font-semibold"
                         data-aos="fade-up"
                     >
                         Thank you for your support!

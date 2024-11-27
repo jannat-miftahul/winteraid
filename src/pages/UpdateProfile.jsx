@@ -54,7 +54,7 @@ const UpdateProfile = () => {
                             required
                         />
                     </div>
-                    <button type="submit" className="btn bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary w-full mt-4">
+                    <button type="submit" className="btn bg-primary text-white px-6 py-2 rounded-full hover:bg-Orange w-full mt-4">
                         Update Information
                     </button>
                 </form>

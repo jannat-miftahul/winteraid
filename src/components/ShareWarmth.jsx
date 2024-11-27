@@ -6,9 +6,9 @@ import { NavLink } from "react-router-dom";
 
 const ShareWarmth = () => {
     return (
-        <section className="bg-gray-100 py-20" data-aos="fade-down">
+        <section className="bg-background py-20" data-aos="fade-down">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl font-bold mb-4">Share the Warmth</h2>
+                <h2 className="text-3xl text-Blue font-bold mb-4">Share the Warmth</h2>
                 <p className="text-lg mb-8">
                     Join us in making a difference this winter. Your support can
                     help provide essential winter clothing and supplies to those
@@ -19,22 +19,22 @@ const ShareWarmth = () => {
                     <div>
                         <NavLink
                             to="/donation-campaigns"
-                            className="btn btn-circle bg-lightBlue text-white font-medium h-32 w-32 hover:bg-secondary"
+                            className="btn btn-circle bg-lightBlue text-white font-medium h-32 w-32 hover:bg-Orange"
                         >
                             <BsGift size={44} />
                         </NavLink>
-                        <h3 className="text-lg font-semibold mt-2">Donate</h3>
+                        <h3 className="text-lg text-Blue font-semibold mt-2">Donate</h3>
                     </div>
 
                     {/* buttons */}
                     <div>
                         <NavLink
                             to="/volunteer"
-                            className="btn btn-circle bg-Blue text-white font-medium h-32 w-32 hover:bg-secondary"
+                            className="btn btn-circle bg-Blue text-white font-medium h-32 w-32 hover:bg-Orange"
                         >
                             <FaRegHandshake size={44} />
                         </NavLink>
-                        <h3 className="text-lg font-semibold mt-2">
+                        <h3 className="text-lg text-Blue font-semibold mt-2">
                             Volunteer
                         </h3>
                     </div>
@@ -42,21 +42,21 @@ const ShareWarmth = () => {
                     <div>
                         <NavLink
                             to="/contact"
-                            className="btn btn-circle bg-lightBlue text-white font-medium h-32 w-32 hover:bg-secondary"
+                            className="btn btn-circle bg-lightBlue text-white font-medium h-32 w-32 hover:bg-Orange"
                         >
                             <PiPhoneCallDuotone size={44} />
                         </NavLink>
-                        <h3 className="text-lg font-semibold mt-2">Contact</h3>
+                        <h3 className="text-lg text-Blue font-semibold mt-2">Contact</h3>
                     </div>
 
                     <div>
                         <NavLink
                             to="/connect"
-                            className="btn btn-circle bg-Blue text-white font-medium h-32 w-32 hover:bg-secondary"
+                            className="btn btn-circle bg-Blue text-white font-medium h-32 w-32 hover:bg-Orange"
                         >
                             <HiOutlineWifi size={44} />
                         </NavLink>
-                        <h3 className="text-lg font-semibold mt-2">Connect</h3>
+                        <h3 className="text-lg text-Blue font-semibold mt-2">Connect</h3>
                     </div>
                 </div>
             </div>
