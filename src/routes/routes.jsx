@@ -11,6 +11,7 @@ import Dashboard from "../pages/Dashboard";
 import ErrorPage from "../pages/ErrorPage";
 import HowToHelp from "../pages/HowToHelp";
 import UpdateProfile from "../pages/UpdateProfile";
+import ForgotPassword from "../pages/ForgotPassword";
 
 const routes = createBrowserRouter([
     {
@@ -68,6 +69,10 @@ const routes = createBrowserRouter([
             {
                 path: "/auth/signup",
                 element: <SignUp />,
+            },
+            {
+                path: "forgot-password",
+                element: <ForgotPassword />,
             },
         ],
     },
