@@ -40,12 +40,15 @@ const CampaignDetails = () => {
     };
 
     return (
-        <section className="bg-background py-12">
+        <section className="bg-background py-12" data-aos="fade-up">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-8">
                     {campaign.title}
                 </h2>
-                <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+                <div
+                    className="flex flex-col md:flex-row items-center gap-6 mb-8"
+                    data-aos="fade-up"
+                >
                     <img
                         src={campaign.image}
                         alt={campaign.title}
@@ -65,7 +68,10 @@ const CampaignDetails = () => {
                     </div>
                 </div>
 
-                <h3 className="text-2xl font-semibold mt-12 mb-4">
+                <h3
+                    className="text-2xl font-semibold mt-12 mb-4"
+                    data-aos="fade-up"
+                >
                     Donate to this Campaign
                 </h3>
 
@@ -73,6 +79,7 @@ const CampaignDetails = () => {
                 <form
                     onSubmit={handleSubmit}
                     className="bg-white p-6 rounded-lg shadow-md"
+                    data-aos="fade-up"
                 >
                     <div className="mb-4">
                         <label
