@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Feature = () => {
     return (
-        <section className="bg-background py-20">
+        <section className="bg-background py-20" data-aos="flip-up">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl font-bold text-center mb-8">
                     Featured Campaign

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const CampaignCard = ({ campaign }) => {
     const { id, title, description, division, image } = campaign;
     return (
-        <div className="bg-white rounded-xl shadow-md overflow-hidden p-4 transition duration-500 transform hover:scale-105">
+        <div className="bg-white rounded-xl shadow-md overflow-hidden p-4 transition duration-500 transform hover:scale-105" data-aos="fade-up">
             <img
                 src={image}
                 alt={title}

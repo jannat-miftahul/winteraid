@@ -1,8 +1,6 @@
-import React from "react";
 import { BsGift } from "react-icons/bs";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { FaRegHandshake } from "react-icons/fa6";
-import { FcDonate } from "react-icons/fc";
 import { GiAwareness } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
@@ -17,7 +15,10 @@ const HowToHelp = () => {
                     There are many ways you can help us make a difference this
                     winter.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+                    data-aos="fade-up"
+                >
                     {/* Donate Items */}
                     <div className="bg-white h-72 p-6 flex flex-col justify-between rounded-lg shadow-md text-center space-y-4">
                         <BsGift size={44} className="mx-auto" />

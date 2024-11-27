@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const ShareWarmth = () => {
     return (
-        <section className="bg-gray-100 py-20">
+        <section className="bg-gray-100 py-20" data-aos="fade-up">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl font-bold mb-4">Share the Warmth</h2>
                 <p className="text-lg mb-8">

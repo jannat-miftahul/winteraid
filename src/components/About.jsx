@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const About = () => {
     return (
-        <section className="bg-background py-20">
+        <section className="bg-background py-20" data-aos="fade-up">
+            <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl text-primary font-bold text-center mb-8">
                     About Us
@@ -26,7 +28,7 @@ const About = () => {
                     </p>
 
                     <div className="flex flex-col lg:flex-row justify-between">
-                        <div>
+                        <div data-aos="fade-right">
                             <h3 className="text-2xl font-semibold mt-8 mb-4">
                                 How You Can Contribute
                             </h3>
@@ -54,7 +56,7 @@ const About = () => {
                             </ul>
                         </div>
 
-                        <div>
+                        <div data-aos="fade-left">
                             <h3 className="text-2xl font-semibold mt-8 mb-4">
                                 Our Impact
                             </h3>
@@ -96,10 +98,16 @@ const About = () => {
                     </div>
 
                     <div className="mt-8">
-                        <h3 className="text-2xl font-semibold mb-4">
+                        <h3
+                            className="text-2xl font-semibold mb-4"
+                            data-aos="fade-up"
+                        >
                             Our Work
                         </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        <div
+                            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+                            data-aos="fade-up"
+                        >
                             <img
                                 src="https://i.ibb.co.com/G558fmp/8e98f1060282f903db4c26833a32e035.jpg"
                                 alt="Gallery Image 1"
@@ -118,7 +126,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="mt-8 text-center">
+                    <div className="mt-8 text-center" data-aos="fade-up">
                         <h3 className="text-2xl font-semibold mb-4">
                             Get Involved
                         </h3>
@@ -126,7 +134,7 @@ const About = () => {
                             Join us in making a difference. Your support can
                             help us reach more people in need.
                         </p>
-                        <div className="">
+                        <div>
                             <NavLink
                                 to="/donation-campaigns"
                                 className="btn bg-secondary text-white px-4 py-2 rounded-full hover:bg-primary"
@@ -137,7 +145,10 @@ const About = () => {
                         </div>
                     </div>
 
-                    <p className="mt-8 text-center font-semibold">
+                    <p
+                        className="mt-8 text-center font-semibold"
+                        data-aos="fade-up"
+                    >
                         Thank you for your support!
                     </p>
                 </div>

@@ -1,12 +1,12 @@
 const HowItWorks = () => {
     return (
-        <section className="bg-white py-20">
+        <section className="bg-white py-20" data-aos="fade-up">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
                 <h2 className="text-3xl text-primary font-bold text-center mb-8">
                     How It Works
                 </h2>
                 <div className="text-lg flex flex-col lg:flex-row justify-between gap-10">
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2" data-aos="fade-right">
                         <h3 className="text-2xl font-semibold mb-4">
                             Instructions for Donation
                         </h3>
@@ -37,7 +37,7 @@ const HowItWorks = () => {
                         </ol>
                     </div>
 
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2" data-aos="fade-left">
                         <h3 className="text-2xl font-semibold mb-4">
                             Collection Points
                         </h3>
