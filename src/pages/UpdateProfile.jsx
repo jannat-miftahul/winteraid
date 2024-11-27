@@ -23,7 +23,7 @@ const UpdateProfile = () => {
     return (
         <div className="min-h-screen flex justify-center items-start">
             <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">
-                <h2 className="text-3xl font-bold text-center mb-8">Update Profile</h2>
+                <h2 className="text-3xl font-medium text-center mb-8">Update Profile</h2>
                 <form onSubmit={handleSubmit} className="card-body">
                     <div className="form-control">
                         <label className="label">

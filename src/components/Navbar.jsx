@@ -39,9 +39,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
-                                        `tab ${
-                                            isActive ? "text-Orange" : ""
-                                        }`
+                                        `tab ${isActive ? "text-Orange" : ""}`
                                     }
                                 >
                                     Home
@@ -51,9 +49,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/donation-campaigns"
                                     className={({ isActive }) =>
-                                        `tab ${
-                                            isActive ? "text-Orange" : ""
-                                        }`
+                                        `tab ${isActive ? "text-Orange" : ""}`
                                     }
                                 >
                                     Donation Campaigns
@@ -63,9 +59,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/how-to-help"
                                     className={({ isActive }) =>
-                                        `tab ${
-                                            isActive ? "text-Orange" : ""
-                                        }`
+                                        `tab ${isActive ? "text-Orange" : ""}`
                                     }
                                 >
                                     How to Help
@@ -75,9 +69,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/dashboard"
                                     className={({ isActive }) =>
-                                        `tab ${
-                                            isActive ? "text-Orange" : ""
-                                        }`
+                                        `tab ${isActive ? "text-Orange" : ""}`
                                     }
                                 >
                                     Dashboard

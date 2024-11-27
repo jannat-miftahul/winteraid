@@ -7,7 +7,7 @@ const About = () => {
             <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
 
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-3xl text-Blue font-bold text-center mb-8">
+                <h2 className="text-3xl text-Blue font-medium text-center mb-8">
                     About Us
                 </h2>
                 <div className="text-lg leading-relaxed">

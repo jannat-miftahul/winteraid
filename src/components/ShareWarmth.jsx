@@ -8,7 +8,7 @@ const ShareWarmth = () => {
     return (
         <section className="bg-background py-20" data-aos="fade-down">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl text-Blue font-bold mb-4">Share the Warmth</h2>
+                <h2 className="text-4xl text-Blue font-medium mb-4">Share the Warmth</h2>
                 <p className="text-lg mb-8">
                     Join us in making a difference this winter. Your support can
                     help provide essential winter clothing and supplies to those
@@ -16,7 +16,7 @@ const ShareWarmth = () => {
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-sm mx-auto">
-                    <div>
+                    <div data-aos="flip-right">
                         <NavLink
                             to="/donation-campaigns"
                             className="btn btn-circle bg-lightBlue text-white font-medium h-32 w-32 hover:bg-Orange"
@@ -27,7 +27,7 @@ const ShareWarmth = () => {
                     </div>
 
                     {/* buttons */}
-                    <div>
+                    <div data-aos="flip-right">
                         <NavLink
                             to="/volunteer"
                             className="btn btn-circle bg-Blue text-white font-medium h-32 w-32 hover:bg-Orange"
@@ -39,7 +39,7 @@ const ShareWarmth = () => {
                         </h3>
                     </div>
 
-                    <div>
+                    <div data-aos="flip-right">
                         <NavLink
                             to="/contact"
                             className="btn btn-circle bg-lightBlue text-white font-medium h-32 w-32 hover:bg-Orange"
@@ -49,7 +49,7 @@ const ShareWarmth = () => {
                         <h3 className="text-lg text-Blue font-semibold mt-2">Contact</h3>
                     </div>
 
-                    <div>
+                    <div data-aos="flip-right">
                         <NavLink
                             to="/connect"
                             className="btn btn-circle bg-Blue text-white font-medium h-32 w-32 hover:bg-Orange"

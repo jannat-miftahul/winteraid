@@ -2,12 +2,14 @@ const HowItWorks = () => {
     return (
         <section className="bg-Blue py-20 text-white" data-aos="fade-up">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-3xl font-bold text-center mb-8">
+                <h2 className="text-4xl font-medium text-center mb-8">
                     How It Works
                 </h2>
+
+                {/* Instructions for Donation */}
                 <div className="text-lg flex flex-col lg:flex-row justify-between gap-10">
                     <div className="lg:w-1/2" data-aos="fade-right">
-                        <h3 className="text-2xl text-lightOrange font-semibold mb-4">
+                        <h3 className="text-3xl text-lightOrange font-medium mb-4">
                             Instructions for Donation
                         </h3>
                         <p className="mb-4">
@@ -37,8 +39,9 @@ const HowItWorks = () => {
                         </ol>
                     </div>
 
+                    {/* Collection Points */}
                     <div className="lg:w-1/2" data-aos="fade-left">
-                        <h3 className="text-2xl text-lightOrange font-semibold mb-4">
+                        <h3 className="text-3xl text-lightOrange font-medium mb-4">
                             Collection Points
                         </h3>
                         <p className="mb-4">
@@ -75,8 +78,9 @@ const HowItWorks = () => {
                     </div>
                 </div>
 
+                {/* Supported Divisions */}
                 <div className="mt-10 lg:mt-0">
-                    <h3 className="text-2xl text-lightOrange font-semibold mb-4">
+                    <h3 className="text-3xl text-lightOrange font-medium mb-4">
                         Supported Divisions
                     </h3>
                     <p className="mb-4">

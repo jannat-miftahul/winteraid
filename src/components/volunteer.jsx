@@ -5,7 +5,7 @@ const Volunteer = () => {
     return (
         <section className="bg-lightOrange py-20" data-aos="flip-down">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-3xl text-Blue font-bold text-center mb-8">
+                <h2 className="text-4xl text-Blue font-medium text-center mb-8">
                     Volunteer Spotlight
                 </h2>
                 <div className="flex flex-col md:flex-row items-center gap-6">
@@ -15,7 +15,7 @@ const Volunteer = () => {
                         className="w-full md:w-1/2 h-96 rounded-lg shadow-md object-cover md:mr-4"
                     />
                     <div className="md:w-1/2">
-                        <h3 className="text-2xl font-semibold mb-4">
+                        <h3 className="text-2xl text-primary font-medium mb-4">
                             Mark Johnson
                         </h3>
                         <p className="mb-8">

@@ -42,9 +42,6 @@ const CampaignDetails = () => {
     return (
         <section className="bg-background py-12" data-aos="fade-up">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-3xl font-bold text-center mb-8">
-                    {campaign.title}
-                </h2>
                 <div
                     className="flex flex-col md:flex-row items-center gap-6 mb-8"
                     data-aos="fade-up"
@@ -54,22 +51,25 @@ const CampaignDetails = () => {
                         alt={campaign.title}
                         className="w-full md:w-1/2 h-96 rounded-lg shadow-md object-cover"
                     />
-                    <div className="md:w-1/2">
-                        <p className="text-lg mb-4">{campaign.description}</p>
-                        <p className="text-gray-700 mb-2">
+                    <div className="md:w-1/2 space-y-2">
+                        <h3 className="text-2xl text-Orange font-medium">
+                            {campaign.title}
+                        </h3>
+                        <p className="text-lg">{campaign.description}</p>
+                        <p className="text-gray-700">
                             Division: {campaign.division}
                         </p>
-                        <p className="text-gray-700 mb-2">
+                        <p className="text-gray-700">
                             Status: {campaign.status}
                         </p>
-                        <p className="text-gray-700 mb-4">
+                        <p className="text-gray-700">
                             Contact: {campaign.contactInfo}
                         </p>
                     </div>
                 </div>
 
                 <h3
-                    className="text-2xl font-semibold mt-12 mb-4"
+                    className="text-3xl text-Blue font-medium mt-12 mb-4"
                     data-aos="fade-up"
                 >
                     Donate to this Campaign

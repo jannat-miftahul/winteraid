@@ -24,7 +24,7 @@ const Footer = () => {
 
                     {/* Contact Information */}
                     <div className="md:w-1/3 space-y-2">
-                        <h2 className="text-lg font-bold">Contact Us</h2>
+                        <h2 className="text-lg font-medium">Contact Us</h2>
                         <p>Email: info@winteraid.com</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Address: 123 Winter St, Snow City, NY 12345</p>
@@ -32,7 +32,7 @@ const Footer = () => {
 
                     {/* Social Media Links */}
                     <div className="space-y-2">
-                        <h2 className="text-lg font-bold mb-2">Follow Us</h2>
+                        <h2 className="text-lg font-medium mb-2">Follow Us</h2>
                         <div className="flex space-x-4">
                             <a
                                 href="https://facebook.com"
