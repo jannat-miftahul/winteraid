@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 
 const HowToHelp = () => {
     return (
-        <section className="bg-gray-100 py-12" data-aos="fade-up">
-            <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
+        <section className="bg-gray-100 py-12">
+            <div
+                className="max-w-screen-xl mx-auto px-4 lg:px-0"
+                data-aos="fade-up"
+            >
                 <h2 className="text-3xl text-Orange font-medium text-center mb-8">
                     How to Help
                 </h2>

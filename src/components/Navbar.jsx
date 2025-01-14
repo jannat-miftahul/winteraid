@@ -35,46 +35,38 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                         >
-                            <li>
-                                <NavLink
-                                    to="/"
-                                    className={({ isActive }) =>
-                                        `tab ${isActive ? "text-Orange" : ""}`
-                                    }
-                                >
-                                    Home
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/donation-campaigns"
-                                    className={({ isActive }) =>
-                                        `tab ${isActive ? "text-Orange" : ""}`
-                                    }
-                                >
-                                    Donation Campaigns
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/how-to-help"
-                                    className={({ isActive }) =>
-                                        `tab ${isActive ? "text-Orange" : ""}`
-                                    }
-                                >
-                                    How to Help
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/dashboard"
-                                    className={({ isActive }) =>
-                                        `tab ${isActive ? "text-Orange" : ""}`
-                                    }
-                                >
-                                    Dashboard
-                                </NavLink>
-                            </li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    `tab ${isActive ? "text-Orange" : ""}`
+                                }
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink
+                                to="/donation-campaigns"
+                                className={({ isActive }) =>
+                                    `tab ${isActive ? "text-Orange" : ""}`
+                                }
+                            >
+                                Donation Campaigns
+                            </NavLink>
+                            <NavLink
+                                to="/how-to-help"
+                                className={({ isActive }) =>
+                                    `tab ${isActive ? "text-Orange" : ""}`
+                                }
+                            >
+                                How to Help
+                            </NavLink>
+                            <NavLink
+                                to="/dashboard"
+                                className={({ isActive }) =>
+                                    `tab ${isActive ? "text-Orange" : ""}`
+                                }
+                            >
+                                Dashboard
+                            </NavLink>
                         </ul>
                     </div>
 
@@ -86,46 +78,38 @@ const Navbar = () => {
 
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium">
-                        <li>
-                            <NavLink
-                                to="/"
-                                className={({ isActive }) =>
-                                    `tab ${isActive ? "text-Orange" : ""}`
-                                }
-                            >
-                                Home
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/donation-campaigns"
-                                className={({ isActive }) =>
-                                    `tab ${isActive ? "text-Orange" : ""}`
-                                }
-                            >
-                                Donation Campaigns
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/how-to-help"
-                                className={({ isActive }) =>
-                                    `tab ${isActive ? "text-Orange" : ""}`
-                                }
-                            >
-                                How to Help
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/dashboard"
-                                className={({ isActive }) =>
-                                    `tab ${isActive ? "text-Orange" : ""}`
-                                }
-                            >
-                                Dashboard
-                            </NavLink>
-                        </li>
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                `tab ${isActive ? "text-Orange" : ""}`
+                            }
+                        >
+                            Home
+                        </NavLink>
+                        <NavLink
+                            to="/donation-campaigns"
+                            className={({ isActive }) =>
+                                `tab ${isActive ? "text-Orange" : ""}`
+                            }
+                        >
+                            Donation Campaigns
+                        </NavLink>
+                        <NavLink
+                            to="/how-to-help"
+                            className={({ isActive }) =>
+                                `tab ${isActive ? "text-Orange" : ""}`
+                            }
+                        >
+                            How to Help
+                        </NavLink>
+                        <NavLink
+                            to="/dashboard"
+                            className={({ isActive }) =>
+                                `tab ${isActive ? "text-Orange" : ""}`
+                            }
+                        >
+                            Dashboard
+                        </NavLink>
                     </ul>
                 </div>
 
