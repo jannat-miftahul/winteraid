@@ -49,7 +49,7 @@ const HowToHelp = () => {
                             winter supplies.
                         </p>
                         <Link
-                            to="/auth/signin"
+                            to="/"
                             className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-Orange"
                         >
                             Donate Now
@@ -63,9 +63,9 @@ const HowToHelp = () => {
                         <p className="text-gray-700">
                             Join our team of volunteers to help distribute
                             winter supplies.
-                        </p>
+                        </p>firebase
                         <Link
-                            to="/auth/signin"
+                            to="/"
                             className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-Orange"
                         >
                             Sign Up
@@ -83,7 +83,7 @@ const HowToHelp = () => {
                             your network.
                         </p>
                         <Link
-                            to="/auth/signin"
+                            to="/"
                             className="btn bg-primary text-white px-4 py-2 rounded-full hover:bg-Orange"
                         >
                             Learn More
