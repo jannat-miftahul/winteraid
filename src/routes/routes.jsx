@@ -35,7 +35,7 @@ const routes = createBrowserRouter([
                 path: "/dashboard",
                 element: (
                     <SecuredRoutes>
-                        <Dashboard />,
+                        <Dashboard />
                     </SecuredRoutes>
                 ),
             },
@@ -43,7 +43,7 @@ const routes = createBrowserRouter([
                 path: "/update-profile",
                 element: (
                     <SecuredRoutes>
-                        <UpdateProfile />,
+                        <UpdateProfile />
                     </SecuredRoutes>
                 ),
             },
@@ -51,7 +51,7 @@ const routes = createBrowserRouter([
                 path: "/campaign/:id",
                 element: (
                     <SecuredRoutes>
-                        <CampaignDetails />,
+                        <CampaignDetails />
                     </SecuredRoutes>
                 ),
                 loader: () => fetch("../donation.json"),
