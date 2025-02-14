@@ -1,4 +1,4 @@
-# Winter Donation Website
+# WinterAid
 
 ## Purpose
 
@@ -6,7 +6,7 @@ The Winter Donation Website is a non-profit platform dedicated to helping the ho
 
 ## Live URL
 
-[Winter Donation Website](https://winter-clothing-donation-a23b3.web.app/)
+[Winter Donation Website](https://winteraid-donation.web.app/)
 
 ## Key Features
 
