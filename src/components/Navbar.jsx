@@ -125,7 +125,9 @@ const Navbar = () => {
                                     alt="user"
                                     className="w-10 h-10 rounded-full"
                                 />
-                                <p className="text-sm">{user?.displayName}</p>
+                                <p className="text-sm text-center">
+                                    {user?.displayName}
+                                </p>
                             </div>
                         ) : (
                             ""
@@ -136,14 +138,14 @@ const Navbar = () => {
                         {user && user?.email ? (
                             <Link
                                 onClick={logOut}
-                                className="btn bg-accent text-white px-6 py-2 rounded-full hover:bg-primary gap-0"
+                                className="btn bg-accent text-white px-6 py-2 rounded-full border-none hover:bg-primary gap-0"
                             >
                                 Logout <CgArrowTopRight size={20} />
                             </Link>
                         ) : (
                             <Link
                                 to="/auth/signin"
-                                className="btn bg-accent text-white px-6 py-2 rounded-full hover:bg-primary gap-0"
+                                className="btn bg-accent text-white px-6 py-2 rounded-full border-none hover:bg-primary gap-0"
                             >
                                 Login <CgArrowTopRight size={20} />
                             </Link>
