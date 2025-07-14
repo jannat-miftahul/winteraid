@@ -1,12 +1,27 @@
 # ❄️ WinterAid
 
+## 📚 Table of Contents
+
+-   [Purpose](#-purpose)
+-   [Live URL](#-live-url)
+-   [Key Features](#-key-features)
+-   [Technologies Used](#️-technologies-used)
+-   [npm Packages Used](#-npm-packages-used)
+-   [Getting Started](#-getting-started)
+    -   [Prerequisites](#-prerequisites)
+    -   [Installation](#️-installation)
+    -   [Available Scripts](#-available-scripts)
+-   [Project Structure](#-project-structure)
+-   [Contributing](#-contributing)
+-   [License](#-license)
+
 ## 🎯 Purpose
 
 The Winter Donation Website is a non-profit platform dedicated to helping the homeless and those in need during the harsh winter months. Our mission is to provide essential winter clothing and supplies to ensure that everyone can stay warm and safe.
 
 ## 🌐 Live URL
 
-[Winter Donation Website](https://winteraid-donation.web.app/)
+[Winter Donation Website](https://winteraid-donation.web.app)
 
 ## ✨ Key Features
 
@@ -27,7 +42,7 @@ The Winter Donation Website is a non-profit platform dedicated to helping the ho
 -   **Backend**: Firebase (Authentication & Database)
 -   **Deployment**: Firebase Hosting
 
-## npm Packages Used
+## 📦 npm Packages Used
 
 -   **react-icons**: Collection of popular icons for React applications.
 -   **aos**: Animate On Scroll library for scroll animations.
@@ -43,7 +58,7 @@ The Winter Donation Website is a non-profit platform dedicated to helping the ho
 -   Node.js (version 18 or higher)
 -   npm or yarn package manager
 
-### Installation
+### ⚙️ Installation
 
 1. 📂 Clone the repository:
 
@@ -93,8 +108,11 @@ We welcome contributions to help improve WinterAid! Please feel free to submit i
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
-## 📧 Contact
+---
 
-For questions or support, please contact us through the website or open an issue on GitHub.
+<div align="center">
+  <p>Made with ❤️ by <a href="https://github.com/jannat-miftahul">Miftahul Jannat</a></p>
+  <p>⭐ Star this repo if you find it helpful!</p>
+</div>
