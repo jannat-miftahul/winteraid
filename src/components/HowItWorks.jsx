@@ -11,18 +11,18 @@ import { FaBuildingColumns } from 'react-icons/fa6';
 
 const HowItWorks = () => {
     return (
-        <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 py-20 text-white relative overflow-hidden" data-aos="fade-up">
+        <section className="bg-gradient-to-br from-Blue via-blue-800 to-blue-700 py-20 text-white relative overflow-hidden" data-aos="fade-up">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-20 left-10 text-6xl">❄️</div>
-                <div className="absolute top-40 right-20 text-4xl">🧥</div>
-                <div className="absolute bottom-20 left-20 text-5xl">🧤</div>
-                <div className="absolute bottom-40 right-10 text-3xl">🧣</div>
+                <div className="absolute top-20 left-10 text-9xl">❄️</div>
+                <div className="absolute top-40 right-20 text-9xl">🧥</div>
+                <div className="absolute bottom-20 left-20 text-6xl">🧤</div>
+                <div className="absolute bottom-40 right-10 text-6xl">🧣</div>
             </div>
 
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-orange-300 bg-clip-text text-transparent">
+                    <h2 className="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-Orange to-lightOrange bg-clip-text text-transparent">
                         How It Works
                     </h2>
                     <p className="text-xl text-blue-200 max-w-2xl mx-auto">
@@ -34,10 +34,10 @@ const HowItWorks = () => {
                 <div className="grid lg:grid-cols-2 gap-12 mb-16">
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20" data-aos="fade-right">
                         <div className="flex items-center mb-6">
-                            <div className="bg-orange-500 p-3 rounded-full mr-4">
+                            <div className="bg-Orange p-3 rounded-full mr-4">
                                 <FaHandHoldingHeart className="text-2xl text-white" />
                             </div>
-                            <h3 className="text-3xl text-orange-400 font-bold">
+                            <h3 className="text-3xl text-lightOrange font-bold">
                                 Instructions for Donation
                             </h3>
                         </div>
@@ -47,40 +47,40 @@ const HowItWorks = () => {
                         </p>
                         <div className="space-y-4">
                             <div className="flex items-start">
-                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
-                                    <FaClipboardList className="text-orange-400" />
+                                <div className="bg-Orange/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaClipboardList className="text-lightOrange" />
                                 </div>
                                 <p className="text-blue-100">
                                     Gather your winter clothing and supplies that you wish to donate.
                                 </p>
                             </div>
                             <div className="flex items-start">
-                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
-                                    <FaCheckCircle className="text-orange-400" />
+                                <div className="bg-Orange/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaCheckCircle className="text-lightOrange" />
                                 </div>
                                 <p className="text-blue-100">
                                     Ensure that all items are clean and in good condition.
                                 </p>
                             </div>
                             <div className="flex items-start">
-                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
-                                    <FaBoxOpen className="text-orange-400" />
+                                <div className="bg-Orange/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaBoxOpen className="text-lightOrange" />
                                 </div>
                                 <p className="text-blue-100">
                                     Pack the items securely in a bag or box.
                                 </p>
                             </div>
                             <div className="flex items-start">
-                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
-                                    <FaTags className="text-orange-400" />
+                                <div className="bg-Orange/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaTags className="text-lightOrange" />
                                 </div>
                                 <p className="text-blue-100">
-                                    Label the bag or box with "WinterAid Donation".
+                                    Label the bag or box with &quot;WinterAid Donation&quot;.
                                 </p>
                             </div>
                             <div className="flex items-start">
-                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
-                                    <FaTruck className="text-orange-400" />
+                                <div className="bg-Orange/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaTruck className="text-lightOrange" />
                                 </div>
                                 <p className="text-blue-100">
                                     Drop off the donation at one of our designated collection points.
@@ -92,10 +92,10 @@ const HowItWorks = () => {
                     {/* Collection Points */}
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20" data-aos="fade-left">
                         <div className="flex items-center mb-6">
-                            <div className="bg-orange-500 p-3 rounded-full mr-4">
+                            <div className="bg-Orange p-3 rounded-full mr-4">
                                 <FaMapMarkerAlt className="text-2xl text-white" />
                             </div>
-                            <h3 className="text-3xl text-orange-400 font-bold">
+                            <h3 className="text-3xl text-lightOrange font-bold">
                                 Collection Points
                             </h3>
                         </div>
@@ -115,7 +115,7 @@ const HowItWorks = () => {
                                 { city: "Mymensingh", address: "505 Cozy Ct, Mymensingh" }
                             ].map((location, index) => (
                                 <div key={index} className="flex items-center bg-blue-800/30 rounded-lg p-3">
-                                    <FaMapMarkerAlt className="text-orange-400 mr-3" />
+                                    <FaMapMarkerAlt className="text-lightOrange mr-3" />
                                     <div>
                                         <span className="font-semibold text-orange-300">{location.city}:</span>
                                         <span className="text-blue-100 ml-2">{location.address}</span>
@@ -129,7 +129,7 @@ const HowItWorks = () => {
                 {/* Supported Divisions */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20" data-aos="fade-up">
                     <div className="text-center mb-8">
-                        <h3 className="text-4xl text-orange-400 font-bold mb-4">
+                        <h3 className="text-4xl text-lightOrange font-bold mb-4">
                             Supported Divisions
                         </h3>
                         <p className="text-blue-100 text-lg max-w-2xl mx-auto">
@@ -143,7 +143,7 @@ const HowItWorks = () => {
                         ].map((division, index) => (
                             <div
                                 key={index}
-                                className="bg-gradient-to-br from-orange-500/20 to-orange-600/30 rounded-xl p-4 text-center border border-orange-400/30 hover:border-orange-400/60 transition-all duration-300 hover:transform hover:scale-105"
+                                className="bg-gradient-to-br from-lightOrange/10 to-Orange/30 rounded-xl p-4 text-center border border-lightOrange/30 hover:border-lightOrange/60 transition-all duration-300 hover:transform hover:scale-105"
                             >
                                 <div className="text-2xl flex justify-center mb-2"><FaBuildingColumns /></div>
                                 <span className="text-white font-semibold">{division}</span>
