@@ -1,102 +1,155 @@
+import {
+    FaMapMarkerAlt,
+    FaClipboardList,
+    FaCheckCircle,
+    FaBoxOpen,
+    FaTags,
+    FaTruck,
+    FaHandHoldingHeart
+} from 'react-icons/fa';
+import { FaBuildingColumns } from 'react-icons/fa6';
+
 const HowItWorks = () => {
     return (
-        <section className="bg-Blue py-20 text-white" data-aos="fade-up">
-            <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-4xl font-medium text-center mb-8">
-                    How It Works
-                </h2>
+        <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 py-20 text-white relative overflow-hidden" data-aos="fade-up">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-20 left-10 text-6xl">❄️</div>
+                <div className="absolute top-40 right-20 text-4xl">🧥</div>
+                <div className="absolute bottom-20 left-20 text-5xl">🧤</div>
+                <div className="absolute bottom-40 right-10 text-3xl">🧣</div>
+            </div>
+
+            <div className="max-w-screen-xl mx-auto px-4 lg:px-0 relative z-10">
+                <div className="text-center mb-16">
+                    <h2 className="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-orange-300 bg-clip-text text-transparent">
+                        How It Works
+                    </h2>
+                    <p className="text-xl text-blue-200 max-w-2xl mx-auto">
+                        Join our mission to bring warmth to those in need during the cold winter months
+                    </p>
+                </div>
 
                 {/* Instructions for Donation */}
-                <div className="text-lg flex flex-col lg:flex-row justify-between gap-10">
-                    <div className="lg:w-1/2" data-aos="fade-right">
-                        <h3 className="text-3xl text-lightOrange font-medium mb-4">
-                            Instructions for Donation
-                        </h3>
-                        <p className="mb-4">
+                <div className="grid lg:grid-cols-2 gap-12 mb-16">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20" data-aos="fade-right">
+                        <div className="flex items-center mb-6">
+                            <div className="bg-orange-500 p-3 rounded-full mr-4">
+                                <FaHandHoldingHeart className="text-2xl text-white" />
+                            </div>
+                            <h3 className="text-3xl text-orange-400 font-bold">
+                                Instructions for Donation
+                            </h3>
+                        </div>
+                        <p className="mb-6 text-blue-100 text-lg leading-relaxed">
                             Donating to WinterAid is simple and straightforward.
                             Follow these steps to make a donation:
                         </p>
-                        <ol className="list-decimal list-inside mb-4">
-                            <li className="mb-2">
-                                Gather your winter clothing and supplies that
-                                you wish to donate.
-                            </li>
-                            <li className="mb-2">
-                                Ensure that all items are clean and in good
-                                condition.
-                            </li>
-                            <li className="mb-2">
-                                Pack the items securely in a bag or box.
-                            </li>
-                            <li className="mb-2">
-                                Label the bag or box with &quot;WinterAid
-                                Donation&quot;.
-                            </li>
-                            <li className="mb-2">
-                                Drop off the donation at one of our designated
-                                collection points.
-                            </li>
-                        </ol>
+                        <div className="space-y-4">
+                            <div className="flex items-start">
+                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaClipboardList className="text-orange-400" />
+                                </div>
+                                <p className="text-blue-100">
+                                    Gather your winter clothing and supplies that you wish to donate.
+                                </p>
+                            </div>
+                            <div className="flex items-start">
+                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaCheckCircle className="text-orange-400" />
+                                </div>
+                                <p className="text-blue-100">
+                                    Ensure that all items are clean and in good condition.
+                                </p>
+                            </div>
+                            <div className="flex items-start">
+                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaBoxOpen className="text-orange-400" />
+                                </div>
+                                <p className="text-blue-100">
+                                    Pack the items securely in a bag or box.
+                                </p>
+                            </div>
+                            <div className="flex items-start">
+                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaTags className="text-orange-400" />
+                                </div>
+                                <p className="text-blue-100">
+                                    Label the bag or box with "WinterAid Donation".
+                                </p>
+                            </div>
+                            <div className="flex items-start">
+                                <div className="bg-orange-500/20 p-2 rounded-full mr-4 mt-1">
+                                    <FaTruck className="text-orange-400" />
+                                </div>
+                                <p className="text-blue-100">
+                                    Drop off the donation at one of our designated collection points.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Collection Points */}
-                    <div className="lg:w-1/2" data-aos="fade-left">
-                        <h3 className="text-3xl text-lightOrange font-medium mb-4">
-                            Collection Points
-                        </h3>
-                        <p className="mb-4">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20" data-aos="fade-left">
+                        <div className="flex items-center mb-6">
+                            <div className="bg-orange-500 p-3 rounded-full mr-4">
+                                <FaMapMarkerAlt className="text-2xl text-white" />
+                            </div>
+                            <h3 className="text-3xl text-orange-400 font-bold">
+                                Collection Points
+                            </h3>
+                        </div>
+                        <p className="mb-6 text-blue-100 text-lg leading-relaxed">
                             We have several collection points across different
                             divisions where you can drop off your donations.
-                            Here are the locations:
                         </p>
-                        <ul className="list-disc list-inside mb-4">
-                            <li className="mb-2">
-                                Dhaka: 123 Winter St, Dhaka
-                            </li>
-                            <li className="mb-2">
-                                Chittagong: 456 Cozy Ave, Chittagong
-                            </li>
-                            <li className="mb-2">
-                                Khulna: 789 Warm Blvd, Khulna
-                            </li>
-                            <li className="mb-2">
-                                Rajshahi: 101 Comfort Rd, Rajshahi
-                            </li>
-                            <li className="mb-2">
-                                Barisal: 202 Heat Ln, Barisal
-                            </li>
-                            <li className="mb-2">
-                                Sylhet: 303 Snug St, Sylhet
-                            </li>
-                            <li className="mb-2">
-                                Rangpur: 404 Toasty Dr, Rangpur
-                            </li>
-                            <li className="mb-2">
-                                Mymensingh: 505 Cozy Ct, Mymensingh
-                            </li>
-                        </ul>
+                        <div className="grid gap-3">
+                            {[
+                                { city: "Dhaka", address: "123 Winter St, Dhaka" },
+                                { city: "Chittagong", address: "456 Cozy Ave, Chittagong" },
+                                { city: "Khulna", address: "789 Warm Blvd, Khulna" },
+                                { city: "Rajshahi", address: "101 Comfort Rd, Rajshahi" },
+                                { city: "Barisal", address: "202 Heat Ln, Barisal" },
+                                { city: "Sylhet", address: "303 Snug St, Sylhet" },
+                                { city: "Rangpur", address: "404 Toasty Dr, Rangpur" },
+                                { city: "Mymensingh", address: "505 Cozy Ct, Mymensingh" }
+                            ].map((location, index) => (
+                                <div key={index} className="flex items-center bg-blue-800/30 rounded-lg p-3">
+                                    <FaMapMarkerAlt className="text-orange-400 mr-3" />
+                                    <div>
+                                        <span className="font-semibold text-orange-300">{location.city}:</span>
+                                        <span className="text-blue-100 ml-2">{location.address}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
                 {/* Supported Divisions */}
-                <div className="mt-10 lg:mt-0">
-                    <h3 className="text-3xl text-lightOrange font-medium mb-4">
-                        Supported Divisions
-                    </h3>
-                    <p className="mb-4">
-                        WinterAid operates in the following divisions of
-                        Bangladesh:
-                    </p>
-                    <ul className="list-disc list-inside">
-                        <li className="mb-2">Dhaka</li>
-                        <li className="mb-2">Chittagong</li>
-                        <li className="mb-2">Khulna</li>
-                        <li className="mb-2">Rajshahi</li>
-                        <li className="mb-2">Barisal</li>
-                        <li className="mb-2">Sylhet</li>
-                        <li className="mb-2">Rangpur</li>
-                        <li className="mb-2">Mymensingh</li>
-                    </ul>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20" data-aos="fade-up">
+                    <div className="text-center mb-8">
+                        <h3 className="text-4xl text-orange-400 font-bold mb-4">
+                            Supported Divisions
+                        </h3>
+                        <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+                            WinterAid operates across all divisions of Bangladesh, ensuring comprehensive coverage
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {[
+                            "Dhaka", "Chittagong", "Khulna", "Rajshahi",
+                            "Barisal", "Sylhet", "Rangpur", "Mymensingh"
+                        ].map((division, index) => (
+                            <div
+                                key={index}
+                                className="bg-gradient-to-br from-orange-500/20 to-orange-600/30 rounded-xl p-4 text-center border border-orange-400/30 hover:border-orange-400/60 transition-all duration-300 hover:transform hover:scale-105"
+                            >
+                                <div className="text-2xl flex justify-center mb-2"><FaBuildingColumns /></div>
+                                <span className="text-white font-semibold">{division}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
