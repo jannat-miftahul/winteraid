@@ -5,7 +5,7 @@ const Volunteer = () => {
     return (
         <section className="bg-lightOrange py-20" data-aos="flip-down">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-                <h2 className="text-4xl text-Blue font-medium text-center mb-8">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl text-Blue font-medium text-center mb-8">
                     Volunteer Spotlight
                 </h2>
                 <div className="flex flex-col md:flex-row items-center gap-6">

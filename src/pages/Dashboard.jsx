@@ -7,7 +7,7 @@ const Dashboard = () => {
 
     return (
         <div className="container mx-auto px-4 py-12" data-aos="zoom-in">
-            <h2 className="text-3xl text-Blue font-medium text-center mb-8">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl text-Blue font-medium text-center mb-8">
                 Welcome, {user?.displayName}!
             </h2>
             <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">

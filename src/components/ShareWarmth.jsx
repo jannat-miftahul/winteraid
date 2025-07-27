@@ -8,7 +8,7 @@ const ShareWarmth = () => {
     return (
         <section className="bg-background py-20" data-aos="fade-down">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-4xl text-Blue font-medium mb-4">Share the Warmth</h2>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl text-Blue font-medium mb-4">Share the Warmth</h2>
                 <p className="text-lg mb-8">
                     Join us in making a difference this winter. Your support can
                     help provide essential winter clothing and supplies to those

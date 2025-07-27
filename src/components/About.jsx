@@ -26,11 +26,11 @@ const About = () => {
 
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl text-Blue font-medium text-center mb-8">
                         About Us
                     </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto mb-6"></div>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-lg max-w-3xl mx-auto leading-relaxed">
                         Bringing warmth and hope to communities in need during the coldest months
                     </p>
                 </div>
@@ -41,14 +41,14 @@ const About = () => {
                         <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4">
                             <FaHandHoldingHeart className="text-2xl text-white" />
                         </div>
-                        <h3 className="text-3xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                        <h3 className="text-3xl font-bold text-lightBlue mb-4">Our Mission</h3>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-8 items-center">
                         <div>
-                            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                            <p className="leading-relaxed mb-6">
                                 WinterAid is a non-profit organization dedicated to helping the homeless and those in need during the harsh winter months. Our mission is to provide essential winter clothing and supplies to ensure that everyone can stay warm and safe.
                             </p>
-                            <p className="text-lg text-gray-600 leading-relaxed">
+                            <p className="leading-relaxed">
                                 We believe that no one should have to suffer from the cold, and we are committed to making a difference in our community. Through our various donation campaigns, we collect and distribute coats, hats, gloves, socks, blankets, and other winter essentials to those who need them the most.
                             </p>
                         </div>
@@ -80,11 +80,11 @@ const About = () => {
                             <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-3 rounded-full mr-4">
                                 <FaHandsHelping className="text-2xl text-white" />
                             </div>
-                            <h3 className="text-3xl font-bold text-gray-800">
+                            <h3 className="text-3xl font-bold text-lightBlue">
                                 How You Can Contribute
                             </h3>
                         </div>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
+                        <p className="mb-6 leading-relaxed">
                             There are several ways you can contribute to our cause:
                         </p>
                         <div className="space-y-4">
@@ -128,11 +128,11 @@ const About = () => {
                             <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-3 rounded-full mr-4">
                                 <FaUsers className="text-2xl text-white" />
                             </div>
-                            <h3 className="text-3xl font-bold text-gray-800">
+                            <h3 className="text-3xl font-bold text-lightBlue">
                                 Our Impact
                             </h3>
                         </div>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
+                        <p className="mb-6 leading-relaxed">
                             Since our inception, we have achieved remarkable milestones:
                         </p>
                         <div className="space-y-6">
@@ -170,8 +170,8 @@ const About = () => {
                 {/* Testimonials */}
                 <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 mb-16 border border-gray-100" data-aos="fade-up">
                     <div className="text-center mb-12">
-                        <h3 className="text-4xl font-bold text-gray-800 mb-4">What People Say</h3>
-                        <p className="text-xl text-gray-600">Real stories from those we&apos;ve helped and our volunteers</p>
+                        <h3 className="text-4xl font-bold text-lightBlue mb-4">What People Say</h3>
+                        <p className="text-lg text-gray-600">Real stories from those we&apos;ve helped and our volunteers</p>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-8">
                         <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200">
@@ -186,7 +186,7 @@ const About = () => {
                                             <span className="text-white font-bold">J</span>
                                         </div>
                                         <div>
-                                            <p className="font-semibold text-gray-800">Harriet Tubman</p>
+                                            <p className="font-semibold text-lightBlue">Harriet Tubman</p>
                                             <p className="text-sm text-gray-600">Beneficiary</p>
                                         </div>
                                     </div>
@@ -205,7 +205,7 @@ const About = () => {
                                             <span className="text-white font-bold">J</span>
                                         </div>
                                         <div>
-                                            <p className="font-semibold text-gray-800">Lisa Smith</p>
+                                            <p className="font-semibold text-lightBlue">Lisa Smith</p>
                                             <p className="text-sm text-gray-600">Volunteer</p>
                                         </div>
                                     </div>
@@ -218,8 +218,8 @@ const About = () => {
                 {/* Our Work Gallery */}
                 <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 mb-16 border border-gray-100" data-aos="fade-up">
                     <div className="text-center mb-12">
-                        <h3 className="text-4xl font-bold text-gray-800 mb-4">Our Work in Action</h3>
-                        <p className="text-xl text-gray-600">See the difference your support makes in our community</p>
+                        <h3 className="text-4xl font-bold text-lightBlue mb-4">Our Work in Action</h3>
+                        <p className="text-lg text-gray-600">See the difference your support makes in our community</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
@@ -271,7 +271,7 @@ const About = () => {
                             <FaHandHoldingHeart className="text-3xl text-white" />
                         </div>
                         <h3 className="text-4xl font-bold mb-4">Get Involved</h3>
-                        <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+                        <p className="text-lg text-blue-100 mb-8 leading-relaxed">
                             Join us in making a difference. Your support can help us reach more people in need and bring warmth to those who need it most.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -302,7 +302,7 @@ const About = () => {
                     <p className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
                         Thank you for your support!
                     </p>
-                    <p className="text-gray-600 mt-2">Together, we can make winter warmer for everyone</p>
+                    <p className="mt-2">Together, we can make winter warmer for everyone</p>
                 </div>
             </div>
         </section>

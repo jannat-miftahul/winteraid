@@ -11,10 +11,10 @@ const HowToHelp = () => {
                 className="max-w-screen-xl mx-auto px-4 lg:px-0"
                 data-aos="fade-up"
             >
-                <h2 className="text-3xl text-Orange font-medium text-center mb-8">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl text-Orange font-medium text-center mb-8">
                     How to Help
                 </h2>
-                <p className="text-center text-gray-700 mb-8">
+                <p className="text-lg text-center text-gray-700 mb-8">
                     There are many ways you can help us make a difference this
                     winter.
                 </p>

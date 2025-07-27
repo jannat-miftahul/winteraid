@@ -22,7 +22,7 @@ const HowItWorks = () => {
 
             <div className="max-w-screen-xl mx-auto px-4 lg:px-0 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-Orange to-lightOrange bg-clip-text text-transparent">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl text-Orange font-medium text-center mb-8">
                         How It Works
                     </h2>
                     <p className="text-xl text-blue-200 max-w-2xl mx-auto">
