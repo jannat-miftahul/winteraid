@@ -15,7 +15,7 @@ import { MdVolunteerActivism } from "react-icons/md";
 
 const About = () => {
     return (
-        <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 relative overflow-hidden" data-aos="fade-up">
+        <section id="about-section" className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 relative overflow-hidden" data-aos="fade-up">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute top-20 left-10 text-9xl text-blue-600">❄️</div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight, FaHeart, FaHandsHelping } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import '../../src/index.css';
 import banner1 from '../assets/Banner1.jpeg';
 import banner2 from '../assets/Banner2.jpeg';
 import banner3 from '../assets/Banner3.jpeg';
@@ -8,33 +9,6 @@ import banner4 from '../assets/Banner4.jpeg';
 
 const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-
-    // Custom styles
-    useEffect(() => {
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fade-in-up {
-                from {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-            
-            .animate-fade-in-up {
-                animation: fade-in-up 0.8s ease-out forwards;
-                opacity: 0;
-            }
-        `;
-        document.head.appendChild(style);
-
-        return () => {
-            document.head.removeChild(style);
-        };
-    }, []);
 
     const slides = [
         {
@@ -67,7 +41,7 @@ const Banner = () => {
             title: "Volunteer with WinterAid",
             subtitle: "Be the helping hand that brings warmth to our community",
             buttonText: "Volunteer",
-            buttonLink: "/volunteer"
+            buttonLink: "/how-to-help"
         }
     ];
 
@@ -132,12 +106,17 @@ const Banner = () => {
                                                 <FaHandsHelping className="mr-2" />
                                                 {slide.buttonText}
                                             </Link>
-                                            <Link
-                                                to="/about"
+                                            <button
+                                                onClick={() => {
+                                                    const aboutSection = document.getElementById('about-section');
+                                                    if (aboutSection) {
+                                                        aboutSection.scrollIntoView({ behavior: 'smooth' });
+                                                    }
+                                                }}
                                                 className="inline-flex items-center justify-center bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 border border-white/30"
                                             >
                                                 Learn More
-                                            </Link>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

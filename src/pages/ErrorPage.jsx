@@ -8,28 +8,25 @@ import { MdOutlineSearchOff } from "react-icons/md";
 const ErrorPage = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-background via-white to-blue-50 flex items-center justify-center relative overflow-hidden">
-            {/* Animated Background Elements */}
+            {/* Animated Background */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 text-6xl text-lightBlue/30 animate-pulse">❄️</div>
-                <div className="absolute top-40 right-20 text-8xl text-Blue/20 animate-bounce">🧥</div>
+                <div className="absolute top-40 right-20 text-8xl text-Blue/20 animate-pulse">🧥</div>
                 <div className="absolute bottom-20 left-20 text-5xl text-Orange/30 animate-pulse">🧤</div>
-                <div className="absolute bottom-40 right-10 text-6xl text-lightOrange/30 animate-bounce">🧣</div>
+                <div className="absolute bottom-40 right-10 text-6xl text-lightOrange/30 animate-pulse">🧣</div>
 
-                {/* Floating Snowflakes */}
-                <FaSnowflake className="absolute top-32 left-1/4 text-lightBlue/40 text-2xl animate-spin" style={{ animationDuration: '3s' }} />
-                <FaSnowflake className="absolute top-60 right-1/3 text-Blue/30 text-xl animate-spin" style={{ animationDuration: '4s' }} />
-                <FaSnowflake className="absolute bottom-32 left-1/3 text-lightBlue/40 text-3xl animate-spin" style={{ animationDuration: '5s' }} />
+                <FaSnowflake className="absolute top-32 left-1/4 text-lightBlue/40 text-2xl" />
+                <FaSnowflake className="absolute top-60 right-1/3 text-Blue/30 text-xl" />
+                <FaSnowflake className="absolute bottom-32 left-1/3 text-lightBlue/40 text-3xl" />
             </div>
 
             <div className="relative z-10 max-w-4xl mx-auto text-center">
                 <div className="p-8">
-                    {/* Error Icon */}
                     <div className="mb-8">
-                        <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-r from-Orange to-lightOrange rounded-full mb-6 shadow-lg animate-bounce">
+                        <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-r from-Orange to-lightOrange rounded-full mb-6 shadow-lg">
                             <MdOutlineSearchOff className="text-4xl text-white" />
                         </div>
 
-                        {/* 404 Display */}
                         <div className="relative">
                             <h1 className="text-6xl lg:text-8xl font-bold text-Blue">
                                 404
@@ -54,7 +51,7 @@ const ErrorPage = () => {
                         </p>
                     </div>
 
-                    {/* Action Buttons */}
+                    {/* Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <Link
                             to="/"
