@@ -13,7 +13,6 @@
     -   [Available Scripts](#-available-scripts)
 -   [Project Structure](#-project-structure)
 -   [Contributing](#-contributing)
--   [License](#-license)
 
 ## 🎯 Purpose
 
@@ -105,10 +104,6 @@ winteraid/
 ## 🤝 Contributing
 
 We welcome contributions to help improve WinterAid! Please feel free to submit issues and pull requests.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
 
 ---
 
